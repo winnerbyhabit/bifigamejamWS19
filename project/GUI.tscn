@@ -1,0 +1,98 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://GUI.gd" type="Script" id=1]
+[ext_resource path="res://assets/CoinMini.png" type="Texture" id=2]
+[ext_resource path="res://assets/Futter.png" type="Texture" id=3]
+[ext_resource path="res://assets/Energy.png" type="Texture" id=4]
+
+[node name="GUI" type="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1023.88
+margin_top = -600.54
+margin_right = 0.115967
+margin_bottom = -0.540344
+script = ExtResource( 1 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -295.0
+margin_top = -40.0
+
+[node name="Geld" type="HBoxContainer" parent="HBoxContainer"]
+margin_right = 90.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="HBoxContainer/Geld"]
+margin_top = 13.0
+margin_right = 54.0
+margin_bottom = 27.0
+text = "     Geld:"
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Geld/Label"]
+margin_right = 16.0
+margin_bottom = 16.0
+texture = ExtResource( 2 )
+
+[node name="Value" type="Label" parent="HBoxContainer/Geld"]
+margin_left = 58.0
+margin_top = 13.0
+margin_right = 90.0
+margin_bottom = 27.0
+text = "1000"
+
+[node name="Futter" type="HBoxContainer" parent="HBoxContainer"]
+margin_left = 94.0
+margin_right = 188.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="HBoxContainer/Futter"]
+margin_top = 13.0
+margin_right = 58.0
+margin_bottom = 27.0
+text = "    Futter:"
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Futter/Label"]
+margin_left = -2.21948
+margin_top = -6.60278
+margin_right = 20.7805
+margin_bottom = 33.3972
+rect_scale = Vector2( 0.8, 1 )
+texture = ExtResource( 3 )
+
+[node name="Value" type="Label" parent="HBoxContainer/Futter"]
+margin_left = 62.0
+margin_top = 13.0
+margin_right = 94.0
+margin_bottom = 27.0
+text = "1000"
+
+[node name="Energie" type="HBoxContainer" parent="HBoxContainer"]
+margin_left = 192.0
+margin_right = 295.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="HBoxContainer/Energie"]
+margin_top = 13.0
+margin_right = 67.0
+margin_bottom = 27.0
+text = "    Energie:"
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Energie/Label"]
+margin_left = -1.39722
+margin_top = -5.39722
+margin_right = 17.6028
+margin_bottom = 34.6028
+texture = ExtResource( 4 )
+
+[node name="Value" type="Label" parent="HBoxContainer/Energie"]
+margin_left = 71.0
+margin_top = 13.0
+margin_right = 103.0
+margin_bottom = 27.0
+text = "1000"
