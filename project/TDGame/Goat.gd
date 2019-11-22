@@ -18,6 +18,7 @@ func _ready():
 
 func win():
 	emit_signal("win")
+	queue_free()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 # warning-ignore:unused_argument

@@ -33,11 +33,11 @@ func _process(delta):
 			print('keine weiteren Schafe')
 			set_process(false)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func on_goat_win():
+	print("ziegen punkt")
 
 func spawn_goat():
 	var goat = scene.instance()
 	add_child(goat)
+	goat.connect("win",self,"on_goat_win")
 	
