@@ -1,0 +1,7 @@
+[gd_scene format=2]
+
+[node name="Game" type="Node2D"]
+
+[node name="TDGame" type="Node2D" parent="."]
+
+[node name="Sheeps" type="Node2D" parent="."]

@@ -1,0 +1,56 @@
+[gd_scene format=2]
+
+[node name="Startmenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Start" type="TextureButton" parent="."]
+margin_left = 159.0
+margin_top = 95.0
+margin_right = 199.0
+margin_bottom = 135.0
+
+[node name="StartLabel" type="Label" parent="Start"]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "Start"
+
+[node name="Credits" type="TextureButton" parent="."]
+margin_left = 173.0
+margin_top = 372.0
+margin_right = 213.0
+margin_bottom = 412.0
+
+[node name="CreditsLabel" type="Label" parent="Credits"]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "Credits
+"
+
+[node name="Settings" type="TextureButton" parent="."]
+margin_left = 536.0
+margin_top = 111.0
+margin_right = 576.0
+margin_bottom = 151.0
+
+[node name="SettingsLabel" type="Label" parent="Settings"]
+margin_left = 163.0
+margin_top = 6.0
+margin_right = 214.0
+margin_bottom = 37.0
+text = "Settings
+"
+
+[node name="Quit" type="TextureButton" parent="."]
+margin_left = 674.0
+margin_top = 88.0
+margin_right = 714.0
+margin_bottom = 128.0
+
+[node name="QuitLabel" type="Label" parent="Quit"]
+margin_left = 41.0
+margin_top = 301.0
+margin_right = 81.0
+margin_bottom = 332.0
+text = "Quit
+"
