@@ -1,0 +1,6 @@
+pause 5
+spawn
+pause 2
+spawn
+pause 2
+spawn
