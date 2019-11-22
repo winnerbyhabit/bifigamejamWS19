@@ -5,3 +5,6 @@ Project des Gamejams der Fachschaft Informatik an der Uni Bonn im Wintersemester
 Teammitglieder:
  * Bettina
  * Christoph
+ * Micah
+ * Simon
+ * Armin
