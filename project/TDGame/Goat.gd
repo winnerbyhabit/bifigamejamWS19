@@ -4,7 +4,7 @@ extends KinematicBody2D
 # var a = 2
 # var b = "text"
 
-export var spawnpoint = Vector2(1,1)
+
 export var destination = Vector2(500,150)
 
 signal win
@@ -20,6 +20,7 @@ func win():
 	emit_signal("win")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
+# warning-ignore:unused_argument
 func _process(delta):
 	
 	
@@ -32,6 +33,7 @@ func _process(delta):
 		var direction = next_position-position 
 		direction = direction.normalized()
 		
+# warning-ignore:return_value_discarded
 		move_and_slide(direction * SPEED,Vector2(1,0))
 	else:
 		set_process(false)
