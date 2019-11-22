@@ -3,3 +3,4 @@
 [node name="TDGame" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
+format = 1
