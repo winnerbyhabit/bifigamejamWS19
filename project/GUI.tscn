@@ -25,6 +25,7 @@ margin_left = -295.0
 margin_top = -40.0
 
 [node name="Geld" type="HBoxContainer" parent="HBoxContainer"]
+editor/display_folded = true
 margin_right = 90.0
 margin_bottom = 40.0
 
@@ -47,6 +48,7 @@ margin_bottom = 27.0
 text = "1000"
 
 [node name="Futter" type="HBoxContainer" parent="HBoxContainer"]
+editor/display_folded = true
 margin_left = 94.0
 margin_right = 188.0
 margin_bottom = 40.0
@@ -73,6 +75,7 @@ margin_bottom = 27.0
 text = "1000"
 
 [node name="Energie" type="HBoxContainer" parent="HBoxContainer"]
+editor/display_folded = true
 margin_left = 192.0
 margin_right = 295.0
 margin_bottom = 40.0
