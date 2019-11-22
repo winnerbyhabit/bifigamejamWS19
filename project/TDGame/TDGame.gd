@@ -29,7 +29,7 @@ func _process(delta):
 			if befehl[0] == "spawn":
 				spawn_goat()
 			elif befehl[0] == "pause":
-				threshold += int(befehl[1])
+				threshold += float(befehl[1])
 		else:
 			print('keine weiteren Schafe')
 			set_process(false)
