@@ -3,4 +3,6 @@
 [node name="Stall" type="Node2D"]
 position = Vector2( 512, 0 )
 
-[node name="Background" type="AnimatedSprite" parent="."]
+[node name="Wiese" type="AnimatedSprite" parent="."]
+
+[node name="Felder" type="AnimatedSprite" parent="."]
