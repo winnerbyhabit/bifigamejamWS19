@@ -1,5 +1,8 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://TDGame/Tileset.res" type="TileSet" id=1]
 
 [node name="TDGame" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
