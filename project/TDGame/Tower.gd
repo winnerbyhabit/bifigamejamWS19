@@ -2,6 +2,7 @@ extends Node2D
 
 export var firerate = 2
 
+export var range_upgrade = 20
 export var tower_range = 100
 export var tower_damage = 1
 var current_targets = []
@@ -65,9 +66,9 @@ func _on_Area2D_input_event(viewport, event, shape_idx):
 
 
 func upgrade_tower():
-	tower_range += 20 
-	$Animation.scale *= float(tower_range)/(tower_range-20)
-	print(float(tower_range)/(tower_range-20))
+	tower_range += range_upgrade 
+	$Animation.scale *= float(tower_range)/(tower_range-range_upgrade)
+	
 	$Area2D/CollisionShape2D.shape.set_radius(tower_range)
 	$Circle.radius = tower_range
 	$Circle.update()
