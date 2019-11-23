@@ -125,7 +125,6 @@ func on_tower_fire(anzahl):
 	emit_signal("tower_fired",anzahl)
 	
 func enable_shooting(value):
-	print('enable shooting', value)
 	var children = get_children()
 	for child in children:
 		if child.is_in_group("tower"):

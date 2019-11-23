@@ -28,7 +28,6 @@ var threshold = 1
 func _process(delta):
 	threshold -= delta
 	if energie < 0:
-		print('no shooting')
 		if shooting_allowed:
 			$TDGame.enable_shooting(false)
 			shooting_allowed = false
