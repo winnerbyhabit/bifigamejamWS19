@@ -17,6 +17,11 @@ export var gridsize = 64
 
 export var anzahl_kacheln = Vector2(8,9)
 
+export var goat_kill_coins = 10
+
+signal recieve_coins(coins_count)
+signal goat_win
+
 func _input(event):
 	if towerplacement_active:
 		if Input.is_action_pressed("left_click"):
@@ -55,11 +60,13 @@ func _process(delta):
 
 func on_goat_win():
 	print("ziegen punkt")
+	emit_signal("goat_win")
 
 func spawn_goat():
 	var goat = goat_scene.instance()
 	add_child(goat)
 	goat.connect("win",self,"on_goat_win")
+	goat.connect("loose",self,"on_goat_kill")
 
 func activate_tower_placement():
 	towerplacement_active = true
@@ -89,5 +96,6 @@ func tower_placement_possible(position):
 				return false
 	
 	return true
-	
-	#print('place tower on: ',position)
+
+func on_goat_kill():
+	emit_signal("recieve_coins",goat_kill_coins)

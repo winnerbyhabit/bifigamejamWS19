@@ -1,8 +1,10 @@
 extends Node2D
 
+export var geld = 100
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	update_geld(0)
 
 #gibt Energie für Schafe
 func energie(schaf, energie):
@@ -20,6 +22,6 @@ func futter(schaf, ziege, feld, futter):
 	get_node("GUI").set_futter(futter)
 
 #gibt geld wenn ziege stirbt
-func geld(geld):
-	geld += 3
+func update_geld(geld_add):
+	geld += geld_add
 	get_node("GUI").set_geld(geld)

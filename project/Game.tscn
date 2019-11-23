@@ -17,4 +17,5 @@ margin_left = 539.0
 margin_top = 543.0
 margin_right = 1024.0
 margin_bottom = 600.0
+[connection signal="recieve_coins" from="TDGame" to="." method="update_geld"]
 [connection signal="add_tower" from="GUI" to="TDGame" method="activate_tower_placement"]

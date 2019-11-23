@@ -10,13 +10,13 @@ func _ready():
 #func _process(delta):
 #	pass
 func set_geld(value):
-	$HBoxContainer/Geld/Value.text = value
+	$HBoxContainer/Geld/Value.text = str(value)
 
 func set_futter(value):
-	$HBoxContainer/Futter/Value.text = value
+	$HBoxContainer/Futter/Value.text = str(value)
 
 func set_energie(value):
-	$HBoxContainer/Energie/Value.text = value
+	$HBoxContainer/Energie/Value.text = str(value)
 
 func _on_Shopping_add_tower():
 	emit_signal("add_tower")
