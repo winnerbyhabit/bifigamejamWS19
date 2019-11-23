@@ -86,7 +86,7 @@ func place_tower(position):
 
 func tower_placement_possible(position):
 	#prüfe ob weg
-	if $Navigation2D/TileMap.get_cell(position.x,position.y) != 15:
+	if $Navigation2D/TileMap.get_cell(position.x,position.y) == 15:
 		return false
 	
 	#prüffe ob anderer Turm
