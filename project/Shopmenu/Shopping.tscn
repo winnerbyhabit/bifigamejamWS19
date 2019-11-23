@@ -4,7 +4,7 @@
 [ext_resource path="res://Shopmenu/Shopping.gd" type="Script" id=2]
 [ext_resource path="res://assets/Sheep_Button.png" type="Texture" id=3]
 [ext_resource path="res://assets/Tower_Button.png" type="Texture" id=4]
-[ext_resource path="res://assets/Field_Button_b.png" type="Texture" id=5]
+[ext_resource path="res://assets/Field_Button.png" type="Texture" id=5]
 
 [node name="ShopButton" type="TextureButton"]
 margin_left = 478.329
