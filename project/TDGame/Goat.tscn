@@ -6,10 +6,13 @@
 [sub_resource type="CircleShape2D" id=1]
 radius = 23.6165
 
-[node name="Goat" type="KinematicBody2D"]
+[node name="Goat" type="KinematicBody2D" groups=[
+"goat",
+]]
 position = Vector2( 50, 50 )
 scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 1 )
+lifepoints = 2
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -2.63812, -22.8293 )

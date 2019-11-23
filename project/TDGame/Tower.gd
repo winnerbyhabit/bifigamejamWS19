@@ -1,17 +1,39 @@
 extends Node2D
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+export var firerate = 2
 
 export var tower_range = 100
+export var tower_damage = 1
+var current_targets = []
+var fire_threshold  = firerate
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Area2D/CollisionShape2D.shape.set_radius(tower_range)
 	$Circle.radius = tower_range
-	pass # Replace with function body.
+	$Reloadbar.max_value = firerate
 
 func show_tower_range(value):
 	$Circle.visible = value
 	#print('value')
+
+
+func target_entered(body):
+	if body.is_in_group("goat"):
+		current_targets.append(body)
+	print(current_targets)
+
+
+func target_exited(body):
+	if body.is_in_group("goat"):
+		current_targets.remove(current_targets.find(body))
+
+func _process(delta):
+	$Reloadbar.value = firerate - fire_threshold
+	if fire_threshold <= 0:
+		if current_targets.size() > 0:
+			fire_threshold += firerate
+			for target in current_targets:
+				target.damage(tower_damage)
+	else:
+		fire_threshold -= delta
