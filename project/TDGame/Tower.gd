@@ -8,6 +8,7 @@ var current_targets = []
 var fire_threshold  = firerate
 
 signal tower_fired
+signal tower_upgraded
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -61,3 +62,14 @@ func _on_Area2D_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton:
 		if (event.is_pressed() and event.button_index == BUTTON_LEFT):
 			show_tower_upgrade(true)
+
+
+func upgrade_tower():
+	tower_range += 20 
+	$Animation.scale *= float(tower_range)/(tower_range-20)
+	print(float(tower_range)/(tower_range-20))
+	$Area2D/CollisionShape2D.shape.set_radius(tower_range)
+	$Circle.radius = tower_range
+	$Circle.update()
+	emit_signal("tower_upgraded")
+	

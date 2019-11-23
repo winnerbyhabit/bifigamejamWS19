@@ -83,6 +83,7 @@ func place_tower(position):
 		tower.position = position * Vector2(gridsize,gridsize) + Vector2(gridsize/2,gridsize/2)
 		tower.show_tower_range(false)
 		tower.connect("tower_fired",self,"on_tower_fire")
+		tower.connect("tower_upgraded",self,"on_tower_upgrade")
 		add_child(tower)
 		emit_signal("tower_placed")
 
@@ -110,6 +111,9 @@ func tower_placement_possible(position):
 						return false
 	
 	return true
+
+func on_tower_upgrade():
+	emit_signal("tower_placed")
 
 func next_wave():
 	threshold = 0
