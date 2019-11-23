@@ -21,7 +21,6 @@ func show_tower_range(value):
 func target_entered(body):
 	if body.is_in_group("goat"):
 		current_targets.append(body)
-	print(current_targets)
 
 
 func target_exited(body):

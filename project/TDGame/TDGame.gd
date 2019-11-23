@@ -91,11 +91,13 @@ func tower_placement_possible(position):
 	var children = self.get_children()
 	for c in children:
 		if c.is_in_group("tower"):
-			print(c.position,position* Vector2(gridsize,gridsize))
 			if c.position == position * Vector2(gridsize,gridsize) + Vector2(gridsize/2,gridsize/2):
 				return false
 	
 	return true
+
+func next_wave():
+	threshold = 0
 
 func on_goat_kill():
 	emit_signal("recieve_coins",goat_kill_coins)
