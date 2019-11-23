@@ -10,7 +10,7 @@
 [ext_resource path="res://assets/new_tiles/Tile6.png" type="Texture" id=8]
 [ext_resource path="res://assets/new_tiles/Tile7.png" type="Texture" id=9]
 
-[sub_resource type="NavigationPolygon" id=7]
+[sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 16, 32, -16, 32, -16, -16, 16, 16, 32, -16, 32, 16 )
 polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 3, 2, 4, 5 ) ]
 outlines = [ PoolVector2Array( 16, 32, 16, 16, 32, 16, 32, -16, -16, -16, -16, 32 ) ]
@@ -46,7 +46,7 @@ outlines = [ PoolVector2Array( -32, -16, 32, -16, 32, 16, -32, 16 ) ]
 texture = ExtResource( 1 )
 
 [node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Tile1"]
-navpoly = SubResource( 7 )
+navpoly = SubResource( 1 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Tile1"]
 

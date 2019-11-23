@@ -86,8 +86,25 @@ func place_tower(position):
 
 func tower_placement_possible(position):
 	#prüfe ob weg
-	if $Navigation2D/TileMap.get_cell(position.x,position.y) == 15:
-		return false
+	match $Navigation2D/TileMap.get_cell(position.x,position.y):
+		0: 
+			return false
+		1:
+			return false
+		2:
+			return false
+		3:
+			return false
+		4:
+			return true
+		5:
+			return true
+		6:
+			return true
+		7:
+			return false
+		8:
+			return false
 	
 	#prüffe ob anderer Turm
 	var children = self.get_children()
