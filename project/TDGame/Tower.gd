@@ -69,11 +69,12 @@ func enable_shooting(value):
 	shooting_allowed = value
 
 func upgrade_tower():
-	tower_range += range_upgrade 
-	$Animation.scale *= float(tower_range)/(tower_range-range_upgrade)
-	
-	$Area2D/CollisionShape2D.shape.set_radius(tower_range)
-	$Circle.radius = tower_range
-	$Circle.update()
-	emit_signal("tower_upgraded")
+	if get_parent().get_parent().is_there_money_for_power():
+		tower_range += range_upgrade 
+		$Animation.scale *= float(tower_range)/(tower_range-range_upgrade)
+		
+		$Area2D/CollisionShape2D.shape.set_radius(tower_range)
+		$Circle.radius = tower_range
+		$Circle.update()
+		emit_signal("tower_upgraded")
 	

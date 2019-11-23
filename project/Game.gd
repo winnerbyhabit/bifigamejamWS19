@@ -81,6 +81,10 @@ func calculate_energy(anzahl):
 func _on_TDGame_tower_placed():
 	update_geld(-1 * base_costs_tower)
 
+func is_there_money_for_tower():
+	if geld >= base_costs_tower:
+		return true
+	return false
 
 func _on_field_placed():
 	felder += 1

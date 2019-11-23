@@ -20,6 +20,7 @@ export var anzahl_kacheln = Vector2(8,9)
 export var goat_kill_coins = 10
 
 signal recieve_coins(coins_count)
+
 signal goat_win
 signal tower_placed
 signal tower_fired
@@ -32,7 +33,9 @@ func _input(event):
 			click_position.y = floor(click_position.y / gridsize)
 			if click_position.x >= 0 and click_position.x < anzahl_kacheln.x and click_position.y >= 0 and click_position.y < anzahl_kacheln.y: 
 				place_tower(click_position)
-			
+		if Input.is_action_pressed("cancel"):
+			towerplacement_active = false
+			Input.set_custom_mouse_cursor(null,Input.CURSOR_ARROW)
 
 
 # Called when the node enters the scene tree for the first time.
@@ -88,6 +91,8 @@ func place_tower(position):
 		emit_signal("tower_placed")
 
 func tower_placement_possible(position):
+	if not get_parent().is_there_money_for_tower():
+		return false
 	#prüfe ob weg
 	match $Navigation2D/TileMap.get_cell(position.x,position.y):
 		0: 
