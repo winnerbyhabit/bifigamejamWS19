@@ -38,7 +38,6 @@ func _input(event):
 
 func activate_field_placement():
 	fieldplacement_active = true
-	print("määäääääääääh")
 	Input.set_custom_mouse_cursor(field_cursor,0,Vector2(gridsize/2,gridsize/2))
 
 func place_field(position):
@@ -50,11 +49,11 @@ func place_field(position):
 		#tower.show_tower_range(false)
 		#add_child(tower)
 		field += 1
-		get_node("TileMap").set_cell(position, 2)
+		get_node("TileMap").set_cell(position, 0)
 
 func field_placement_possible(position):
 	#prüfe ob feld/ muss noch angepasst werden and neues tileset
-	if $Stall/TileMap.get_cell(position.x,position.y) != 2:
+	if $Stall/TileMap.get_cell(position.x,position.y) != 0:
 		return true
 	#prüfung für feldteil des rechten felds oder true/fale umdrehen und auf brache prüfen
 	
