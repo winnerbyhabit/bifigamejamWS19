@@ -13,8 +13,6 @@ func _on_Start_pressed():
 
 func _on_Credits_pressed():
 	get_tree().change_scene("res://Credits.tscn")
-	pass
 
 func _on_Quit_pressed():
 	get_tree().quit()
-	pass

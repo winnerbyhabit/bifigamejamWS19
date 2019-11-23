@@ -48,3 +48,5 @@ func _on_Shopping_add_sheep():
 func _on_Shopping_add_field():
 	emit_signal("buy_field")
 
+func _on_BackToMenu_pressed():
+	get_tree().change_scene("res://Startmenu.tscn")
