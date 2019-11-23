@@ -22,6 +22,9 @@ func set_futter(value):
 func set_energie(value):
 	$HBoxContainer/Energie/Value.text = str(value)
 
+func set_schafe(value):
+	$HBoxContainer2/Schafe/Value.text = str(value)
+
 func _on_Shopping_add_tower():
 	emit_signal("add_tower")
 
