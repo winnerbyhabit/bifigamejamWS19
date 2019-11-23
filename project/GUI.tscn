@@ -1,12 +1,13 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://GUI.gd" type="Script" id=1]
 [ext_resource path="res://assets/Fast_Forward2.png" type="Texture" id=2]
-[ext_resource path="res://assets/pause_button.png" type="Texture" id=3]
+[ext_resource path="res://assets/Pause.png" type="Texture" id=3]
 [ext_resource path="res://Shopmenu/Shopping.tscn" type="PackedScene" id=4]
-[ext_resource path="res://assets/CoinMini.png" type="Texture" id=5]
-[ext_resource path="res://assets/Futter.png" type="Texture" id=6]
-[ext_resource path="res://assets/Energy.png" type="Texture" id=7]
+[ext_resource path="res://assets/Shop_button.png" type="Texture" id=5]
+[ext_resource path="res://assets/CoinMini.png" type="Texture" id=6]
+[ext_resource path="res://assets/Futter.png" type="Texture" id=7]
+[ext_resource path="res://assets/Energy.png" type="Texture" id=8]
 
 [node name="GUI" type="Control"]
 anchor_left = 1.0
@@ -43,13 +44,14 @@ texture_normal = ExtResource( 3 )
 editor/display_folded = true
 margin_left = 72.0
 margin_top = 0.0
-margin_right = 264.0
+margin_right = 228.0
 margin_bottom = 60.0
+texture_normal = ExtResource( 5 )
 
 [node name="Geld" type="HBoxContainer" parent="HBoxContainer"]
 editor/display_folded = true
-margin_left = 268.0
-margin_right = 358.0
+margin_left = 232.0
+margin_right = 322.0
 margin_bottom = 60.0
 
 [node name="Label" type="Label" parent="HBoxContainer/Geld"]
@@ -61,7 +63,7 @@ text = "     Geld:"
 [node name="TextureRect" type="TextureRect" parent="HBoxContainer/Geld/Label"]
 margin_right = 16.0
 margin_bottom = 16.0
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="Value" type="Label" parent="HBoxContainer/Geld"]
 margin_left = 58.0
@@ -72,8 +74,8 @@ text = "1000"
 
 [node name="Futter" type="HBoxContainer" parent="HBoxContainer"]
 editor/display_folded = true
-margin_left = 362.0
-margin_right = 456.0
+margin_left = 326.0
+margin_right = 420.0
 margin_bottom = 60.0
 
 [node name="Label" type="Label" parent="HBoxContainer/Futter"]
@@ -88,7 +90,7 @@ margin_top = -6.60278
 margin_right = 20.7805
 margin_bottom = 33.3972
 rect_scale = Vector2( 0.8, 1 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 
 [node name="Value" type="Label" parent="HBoxContainer/Futter"]
 margin_left = 62.0
@@ -99,8 +101,8 @@ text = "1000"
 
 [node name="Energie" type="HBoxContainer" parent="HBoxContainer"]
 editor/display_folded = true
-margin_left = 460.0
-margin_right = 563.0
+margin_left = 424.0
+margin_right = 527.0
 margin_bottom = 60.0
 
 [node name="Label" type="Label" parent="HBoxContainer/Energie"]
@@ -114,7 +116,7 @@ margin_left = -1.39722
 margin_top = -5.39722
 margin_right = 17.6028
 margin_bottom = 34.6028
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 
 [node name="Value" type="Label" parent="HBoxContainer/Energie"]
 margin_left = 71.0
@@ -122,5 +124,6 @@ margin_top = 23.0
 margin_right = 103.0
 margin_bottom = 37.0
 text = "1000"
+[connection signal="pressed" from="HBoxContainer/FastForward" to="." method="_on_FastForward_pressed"]
 [connection signal="pressed" from="HBoxContainer/Pause" to="." method="toggle_pause"]
 [connection signal="add_tower" from="HBoxContainer/Shopping" to="." method="_on_Shopping_add_tower"]
