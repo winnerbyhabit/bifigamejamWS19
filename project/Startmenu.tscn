@@ -1,8 +1,11 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Startmenu.gd" type="Script" id=1]
 
 [node name="Startmenu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 1 )
 
 [node name="Start" type="TextureButton" parent="."]
 margin_left = 159.0
