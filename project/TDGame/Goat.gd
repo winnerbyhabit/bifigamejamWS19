@@ -1,12 +1,12 @@
 extends KinematicBody2D
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+
 
 export var lifepoints = 5
 
 export var destination = Vector2(500,150)
+
+var is_alive = true
 
 signal win
 signal loose
@@ -23,8 +23,12 @@ func win():
 	queue_free()
 
 func loose():
-	emit_signal("loose")
-	queue_free()
+	if self.is_alive:
+		$die.play()
+		emit_signal("loose")
+		set_process(false)
+		self.is_alive = false
+		self.visible = false
 
 func damage(damage_points):
 	lifepoints -= damage_points
@@ -34,7 +38,6 @@ func damage(damage_points):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 # warning-ignore:unused_argument
 func _process(delta):
-	
 	
 	#print(path)
 	if(path.size() > 0):
@@ -50,3 +53,5 @@ func _process(delta):
 	else:
 		set_process(false)
 		win()
+
+

@@ -35,5 +35,8 @@ func _process(delta):
 			fire_threshold += firerate
 			for target in current_targets:
 				target.damage(tower_damage)
+				if not target.is_alive:
+					current_targets.remove(current_targets.find(target))
+					
 	else:
 		fire_threshold -= delta
