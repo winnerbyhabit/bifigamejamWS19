@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Mäh1.ogg-f4b2602d762142495001389b932fd115.oggstr"
+
+[deps]
+
+source_file="res://sfx/Mäh1.ogg"
+dest_files=[ "res://.import/Mäh1.ogg-f4b2602d762142495001389b932fd115.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
