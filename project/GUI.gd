@@ -20,3 +20,7 @@ func set_energie(value):
 
 func _on_Shopping_add_tower():
 	emit_signal("add_tower")
+
+
+func toggle_pause():
+	get_tree().paused = not get_tree().paused
