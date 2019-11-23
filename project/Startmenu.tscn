@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Startmenu.gd" type="Script" id=1]
 [ext_resource path="res://assets/Gras.jpg" type="Texture" id=2]
@@ -11,22 +11,11 @@ outline_color = Color( 0, 0, 0, 1 )
 use_mipmaps = true
 font_data = ExtResource( 4 )
 
-[sub_resource type="GDScript" id=2]
-script/source = "extends TextureButton
-export(PackedScene) var credits
-
-func _ready():
-	pass # Replace with function body.
-
-func _on_Creditbutton_pressed():
-	get_tree().change_scene_to(credits)
-	pass # Replace with function body."
-
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=2]
 size = 49
 font_data = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 size = 49
 font_data = ExtResource( 4 )
 
@@ -62,14 +51,13 @@ margin_top = 338.851
 margin_right = 635.418
 margin_bottom = 498.851
 texture_normal = ExtResource( 3 )
-script = SubResource( 2 )
 
 [node name="CreditsLabel" type="Label" parent="Credits"]
 margin_left = 77.0
 margin_top = 56.0
 margin_right = 236.0
 margin_bottom = 104.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Credits"
 
@@ -85,7 +73,7 @@ margin_left = 109.277
 margin_top = 55.8117
 margin_right = 195.277
 margin_bottom = 103.812
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Exit"
 [connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
