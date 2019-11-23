@@ -38,6 +38,7 @@ func _input(event):
 
 func activate_field_placement():
 	fieldplacement_active = true
+	print("määäääääääääh")
 	Input.set_custom_mouse_cursor(field_cursor,0,Vector2(gridsize/2,gridsize/2))
 
 func place_field(position):

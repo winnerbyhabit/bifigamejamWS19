@@ -1,6 +1,7 @@
 extends Control
 
 signal add_tower
+
 signal add_field
 
 # Called when the node enters the scene tree for the first time.
