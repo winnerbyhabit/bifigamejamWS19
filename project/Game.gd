@@ -2,12 +2,15 @@ extends Node2D
 
 export var geld = 100
 export var energie = 100
+export var futter = 100
+
 
 export var base_costs_sheep = 50
 export var base_costs_field = 50
 export var base_costs_tower = 50
 
 export var energy_production_per_sheep_per_second = 1
+export var foot_consumation_per_sheep_per_second = 1
 
 export var sheeps = 1
 
@@ -20,22 +23,14 @@ func _process(delta):
 		
 		#energy
 		update_energy(sheeps * energy_production_per_sheep_per_second)
+		
+		update_futter(sheeps * foot_consumation_per_sheep_per_second * -1)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	update_geld(0)
 	update_energy(0)
 	$GUI.set_schafe(sheeps)
-
-#energiekosten Türme
-func turmschuss(energie):
-	energie -= 5
-	get_node("GUI").set_energie(energie)
-
-#futterfunktion
-func futter(schaf, ziege, feld, futter):
-	futter = futter - schaf * 5 - ziege * 5 + feld * 5
-	get_node("GUI").set_futter(futter)
 
 func update_energy(energy_add):
 	energie += energy_add
@@ -45,6 +40,10 @@ func update_energy(energy_add):
 func update_geld(geld_add):
 	geld += geld_add
 	get_node("GUI").set_geld(geld)
+
+func update_futter(futter_add):
+	futter += futter_add
+	$GUI.set_futter(futter)
 
 func _on_GUI_buy_sheep():
 	sheeps += 1
