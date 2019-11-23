@@ -21,11 +21,22 @@ export var base_tower_energy_consumation = 5
 export var sheeps = 1
 export var goats = 0
 
+var shooting_allowed = true
 
 var threshold = 1
 
 func _process(delta):
 	threshold -= delta
+	if energie < 0:
+		print('no shooting')
+		if shooting_allowed:
+			$TDGame.enable_shooting(false)
+			shooting_allowed = false
+	else:
+		if not shooting_allowed :
+			$TDGame.enable_shooting(true)
+			shooting_allowed = true
+		
 	if threshold < 0:
 		threshold += 1
 		

@@ -44,7 +44,7 @@ func _ready():
 			var csv = file.get_csv_line (" ")
 			waves.push_back(csv)
 		file.close()
-	print(waves)
+	#print(waves)
 	set_process(true)
 
 func _process(delta):
@@ -123,3 +123,10 @@ func on_goat_kill():
 	
 func on_tower_fire(anzahl):
 	emit_signal("tower_fired",anzahl)
+	
+func enable_shooting(value):
+	print('enable shooting', value)
+	var children = get_children()
+	for child in children:
+		if child.is_in_group("tower"):
+			child.enable_shooting(value)
