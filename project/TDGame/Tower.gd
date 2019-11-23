@@ -33,12 +33,16 @@ func target_exited(body):
 func _process(delta):
 	$Reloadbar.value = firerate - fire_threshold
 	if fire_threshold <= 0:
-		if current_targets.size() > 0:
+		var shoot = false
+		for target in current_targets:
+			if is_instance_valid( target ) and target.is_alive:
+				target.damage(tower_damage)
+				shoot = true
+			else:
+				current_targets.remove(current_targets.find(target))
+	
+		if shoot:
 			fire_threshold += firerate
-			for target in current_targets:
-				if target.is_alive:
-					target.damage(tower_damage)
-					
-			emit_signal("tower_fired",current_targets.size())
+		emit_signal("tower_fired",current_targets.size())
 	else:
 		fire_threshold -= delta

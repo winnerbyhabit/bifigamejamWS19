@@ -97,23 +97,17 @@ func tower_placement_possible(position):
 			return false
 		3:
 			return false
-		4:
-			return true
-		5:
-			return true
-		6:
-			return true
 		7:
 			return false
 		8:
 			return false
-	
-	#prüffe ob anderer Turm
-	var children = self.get_children()
-	for c in children:
-		if c.is_in_group("tower"):
-			if c.position == position * Vector2(gridsize,gridsize) + Vector2(gridsize/2,gridsize/2):
-				return false
+		_:
+			#prüffe ob anderer Turm
+			var children = self.get_children()
+			for c in children:
+				if c.is_in_group("tower"):
+					if c.position == position * Vector2(gridsize,gridsize) + Vector2(gridsize/2,gridsize/2):
+						return false
 	
 	return true
 
