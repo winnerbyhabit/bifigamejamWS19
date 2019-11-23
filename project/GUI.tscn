@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://GUI.gd" type="Script" id=1]
 [ext_resource path="res://assets/Fast_Forward2.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://assets/CoinMini.png" type="Texture" id=5]
 [ext_resource path="res://assets/Futter.png" type="Texture" id=6]
 [ext_resource path="res://assets/Energy.png" type="Texture" id=7]
+[ext_resource path="res://assets/Schaf.png" type="Texture" id=8]
 
 [node name="GUI" type="Control"]
 anchor_left = 1.0
@@ -122,6 +123,35 @@ margin_top = 23.0
 margin_right = 103.0
 margin_bottom = 37.0
 text = "1000"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -85.0
+margin_bottom = 40.0
+
+[node name="Schafe" type="HBoxContainer" parent="HBoxContainer2"]
+margin_right = 85.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="HBoxContainer2/Schafe"]
+margin_top = 13.0
+margin_right = 65.0
+margin_bottom = 27.0
+text = "     Schafe:"
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer2/Schafe/Label"]
+margin_right = 16.0
+margin_bottom = 16.0
+rect_scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 8 )
+
+[node name="Value" type="Label" parent="HBoxContainer2/Schafe"]
+margin_left = 69.0
+margin_top = 13.0
+margin_right = 85.0
+margin_bottom = 27.0
+text = "20"
 [connection signal="pressed" from="HBoxContainer/FastForward" to="." method="_on_FastForward_pressed"]
 [connection signal="pressed" from="HBoxContainer/Pause" to="." method="toggle_pause"]
 [connection signal="add_field" from="HBoxContainer/Shopping" to="." method="_on_Shopping_add_field"]
