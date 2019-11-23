@@ -19,6 +19,6 @@ editor/display_folded = true
 shape = SubResource( 1 )
 
 [node name="Circle" parent="." instance=ExtResource( 3 )]
-visible = false
+color = Color( 0.203922, 0.776471, 0.0196078, 0.392157 )
 [connection signal="mouse_entered" from="Area2D" to="." method="show_tower_range" binds= [ true ]]
 [connection signal="mouse_exited" from="Area2D" to="." method="show_tower_range" binds= [ false ]]

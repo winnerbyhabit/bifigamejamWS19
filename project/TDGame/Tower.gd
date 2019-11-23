@@ -14,4 +14,4 @@ func _ready():
 
 func show_tower_range(value):
 	$Circle.visible = value
-
+	#print('value')

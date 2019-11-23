@@ -1,6 +1,7 @@
 extends Node2D
 
-var scene = load("res://TDGame/Goat.tscn")
+var goat_scene = load("res://TDGame/Goat.tscn")
+var tower_scene = load("res://TDGame/Tower.tscn")
 
 export(String, FILE) var wavesTXT
 
@@ -54,7 +55,7 @@ func on_goat_win():
 	print("ziegen punkt")
 
 func spawn_goat():
-	var goat = scene.instance()
+	var goat = goat_scene.instance()
 	add_child(goat)
 	goat.connect("win",self,"on_goat_win")
 
@@ -63,4 +64,8 @@ func activate_tower_placement():
 
 func place_tower(position):
 	towerplacement_active = false
+	var tower = tower_scene.instance()
+	tower.position = position * Vector2(gridsize,gridsize) + Vector2(gridsize/2,gridsize/2)
+	tower.show_tower_range(false)
+	add_child(tower)
 	print('place tower on: ',position)
