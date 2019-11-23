@@ -22,6 +22,7 @@ export var goat_kill_coins = 10
 signal recieve_coins(coins_count)
 signal goat_win
 signal tower_placed
+signal tower_fired
 
 func _input(event):
 	if towerplacement_active:
@@ -81,6 +82,7 @@ func place_tower(position):
 		var tower = tower_scene.instance()
 		tower.position = position * Vector2(gridsize,gridsize) + Vector2(gridsize/2,gridsize/2)
 		tower.show_tower_range(false)
+		tower.connect("tower_fired",self,"on_tower_fire")
 		add_child(tower)
 		emit_signal("tower_placed")
 
@@ -120,3 +122,6 @@ func next_wave():
 
 func on_goat_kill():
 	emit_signal("recieve_coins",goat_kill_coins)
+	
+func on_tower_fire(anzahl):
+	emit_signal("tower_fired",anzahl)

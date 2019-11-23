@@ -7,6 +7,8 @@ export var tower_damage = 1
 var current_targets = []
 var fire_threshold  = firerate
 
+signal tower_fired
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Area2D/CollisionShape2D.shape.set_radius(tower_range)
@@ -37,6 +39,6 @@ func _process(delta):
 				target.damage(tower_damage)
 				if not target.is_alive:
 					current_targets.remove(current_targets.find(target))
-					
+			emit_signal("tower_fired",current_targets.size())
 	else:
 		fire_threshold -= delta
