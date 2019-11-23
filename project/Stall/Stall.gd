@@ -39,6 +39,9 @@ func _input(event):
 			click_position.y = floor(click_position.y / gridsize)
 			if click_position.x >= 0 and click_position.x < anzahl_kacheln.x and click_position.y >= 5 and click_position.y < anzahl_kacheln.y: 
 				place_field(click_position)
+		if Input.is_action_pressed("cancel"):
+			fieldplacement_active = false
+			Input.set_custom_mouse_cursor(null,Input.CURSOR_ARROW)
 
 func activate_field_placement():
 	fieldplacement_active = true
