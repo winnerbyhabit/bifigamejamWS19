@@ -1,6 +1,7 @@
 extends Control
 
 signal add_tower
+signal add_field
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -20,3 +21,7 @@ func set_energie(value):
 
 func _on_Shopping_add_tower():
 	emit_signal("add_tower")
+
+func _on_Shopping_add_field():
+	emit_signal("add_field")
+
