@@ -69,7 +69,7 @@ func enable_shooting(value):
 	shooting_allowed = value
 
 func upgrade_tower():
-	if get_parent().get_parent().is_there_money_for_power():
+	if get_parent().get_parent().is_there_money_for_tower():
 		tower_range += range_upgrade 
 		$Animation.scale *= float(tower_range)/(tower_range-range_upgrade)
 		

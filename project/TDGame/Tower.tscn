@@ -6,7 +6,7 @@
 [ext_resource path="res://assets/An1.png" type="Texture" id=4]
 [ext_resource path="res://assets/An212.png" type="Texture" id=5]
 [ext_resource path="res://assets/An3.png" type="Texture" id=6]
-[ext_resource path="res://assets/Fast_Forward2.png" type="Texture" id=7]
+[ext_resource path="res://assets/Upgrade_L.png" type="Texture" id=7]
 
 [sub_resource type="CircleShape2D" id=1]
 
@@ -52,10 +52,10 @@ animation = "attack"
 
 [node name="Upgrade" type="TextureButton" parent="."]
 visible = false
-margin_left = -14.8188
-margin_top = -0.362389
-margin_right = 25.1812
-margin_bottom = 31.6376
+margin_left = -15.655
+margin_top = -14.5785
+margin_right = 24.345
+margin_bottom = 17.4215
 texture_normal = ExtResource( 7 )
 [connection signal="body_entered" from="Area2D" to="." method="target_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="target_exited"]
