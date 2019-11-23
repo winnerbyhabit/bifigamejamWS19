@@ -74,4 +74,4 @@ func _on_TDGame_tower_placed():
 
 func _on_field_placed():
 	felder += 1
-	$GUI.set_felder(felder)
+	$GUI.set_food_per_sec(felder * base_foot_production)

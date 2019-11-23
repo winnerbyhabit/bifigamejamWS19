@@ -1,138 +1,69 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://GUI.gd" type="Script" id=1]
-[ext_resource path="res://assets/Fast_Forward2.png" type="Texture" id=2]
-[ext_resource path="res://assets/Pause.png" type="Texture" id=3]
-[ext_resource path="res://Shopmenu/Shopping.tscn" type="PackedScene" id=4]
-[ext_resource path="res://assets/CoinMini.png" type="Texture" id=5]
-[ext_resource path="res://assets/Futter.png" type="Texture" id=6]
-[ext_resource path="res://assets/Energy.png" type="Texture" id=7]
-[ext_resource path="res://assets/Schaf.png" type="Texture" id=8]
+[ext_resource path="res://assets/Futter.png" type="Texture" id=2]
+[ext_resource path="res://assets/Schaf.png" type="Texture" id=3]
+[ext_resource path="res://assets/Fast_Forward2.png" type="Texture" id=4]
+[ext_resource path="res://assets/Pause.png" type="Texture" id=5]
+[ext_resource path="res://Shopmenu/Shopping.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/CoinMini.png" type="Texture" id=7]
+[ext_resource path="res://assets/Energy.png" type="Texture" id=8]
 
 [node name="GUI" type="Control"]
-editor/display_folded = true
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -1023.88
-margin_top = -600.54
-margin_right = 0.115967
-margin_bottom = -0.540344
+margin_left = -1024.45
+margin_top = -601.964
+margin_right = -0.45282
+margin_bottom = -1.96423
 script = ExtResource( 1 )
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="ColorRect" type="ColorRect" parent="."]
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -574.0
-margin_top = -60.0
-
-[node name="FastForward" type="TextureButton" parent="HBoxContainer"]
-margin_right = 32.0
-margin_bottom = 60.0
-texture_normal = ExtResource( 2 )
-
-[node name="Pause" type="TextureButton" parent="HBoxContainer"]
-pause_mode = 2
-margin_left = 36.0
-margin_right = 68.0
-margin_bottom = 60.0
-texture_normal = ExtResource( 3 )
-
-[node name="Shopping" parent="HBoxContainer" instance=ExtResource( 4 )]
-editor/display_folded = true
-margin_left = 72.0
-margin_top = 0.0
-margin_right = 228.0
-margin_bottom = 60.0
-
-[node name="Geld" type="HBoxContainer" parent="HBoxContainer"]
-editor/display_folded = true
-margin_left = 232.0
-margin_right = 322.0
-margin_bottom = 60.0
-
-[node name="Label" type="Label" parent="HBoxContainer/Geld"]
-margin_top = 23.0
-margin_right = 54.0
-margin_bottom = 37.0
-text = "     Geld:"
-
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Geld/Label"]
-margin_right = 16.0
-margin_bottom = 16.0
-texture = ExtResource( 5 )
-
-[node name="Value" type="Label" parent="HBoxContainer/Geld"]
-margin_left = 58.0
-margin_top = 23.0
-margin_right = 90.0
-margin_bottom = 37.0
-text = "1000"
-
-[node name="Futter" type="HBoxContainer" parent="HBoxContainer"]
-editor/display_folded = true
-margin_left = 326.0
-margin_right = 420.0
-margin_bottom = 60.0
-
-[node name="Label" type="Label" parent="HBoxContainer/Futter"]
-margin_top = 23.0
-margin_right = 58.0
-margin_bottom = 37.0
-text = "    Futter:"
-
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Futter/Label"]
-margin_left = -2.21948
-margin_top = -6.60278
-margin_right = 20.7805
-margin_bottom = 33.3972
-rect_scale = Vector2( 0.8, 1 )
-texture = ExtResource( 6 )
-
-[node name="Value" type="Label" parent="HBoxContainer/Futter"]
-margin_left = 62.0
-margin_top = 23.0
-margin_right = 94.0
-margin_bottom = 37.0
-text = "1000"
-
-[node name="Energie" type="HBoxContainer" parent="HBoxContainer"]
-editor/display_folded = true
-margin_left = 424.0
-margin_right = 527.0
-margin_bottom = 60.0
-
-[node name="Label" type="Label" parent="HBoxContainer/Energie"]
-margin_top = 23.0
-margin_right = 67.0
-margin_bottom = 37.0
-text = "    Energie:"
-
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Energie/Label"]
-margin_left = -1.39722
-margin_top = -5.39722
-margin_right = 17.6028
-margin_bottom = 34.6028
-texture = ExtResource( 7 )
-
-[node name="Value" type="Label" parent="HBoxContainer/Energie"]
-margin_left = 71.0
-margin_top = 23.0
-margin_right = 103.0
-margin_bottom = 37.0
-text = "1000"
+margin_left = -584.996
+margin_top = -48.9998
+margin_right = 0.00408936
+margin_bottom = 0.000244141
+color = Color( 0.192157, 0.0352941, 0.0352941, 0.345098 )
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="."]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -180.0
+margin_left = -243.0
 margin_bottom = 40.0
 
+[node name="FoodPerSec" type="HBoxContainer" parent="HBoxContainer2"]
+margin_right = 63.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="HBoxContainer2/FoodPerSec"]
+margin_top = 13.0
+margin_right = 43.0
+margin_bottom = 27.0
+text = "   /sec:"
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer2/FoodPerSec/Label"]
+margin_right = 16.0
+margin_bottom = 16.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="Value" type="Label" parent="HBoxContainer2/FoodPerSec"]
+margin_left = 47.0
+margin_top = 13.0
+margin_right = 63.0
+margin_bottom = 27.0
+text = "20"
+
 [node name="Schafe" type="HBoxContainer" parent="HBoxContainer2"]
-margin_right = 85.0
+editor/display_folded = true
+margin_left = 67.0
+margin_right = 152.0
 margin_bottom = 40.0
 
 [node name="Label" type="Label" parent="HBoxContainer2/Schafe"]
@@ -145,7 +76,7 @@ text = "     Schafe:"
 margin_right = 16.0
 margin_bottom = 16.0
 rect_scale = Vector2( 0.25, 0.25 )
-texture = ExtResource( 8 )
+texture = ExtResource( 3 )
 
 [node name="Value" type="Label" parent="HBoxContainer2/Schafe"]
 margin_left = 69.0
@@ -155,8 +86,9 @@ margin_bottom = 27.0
 text = "20"
 
 [node name="Ziegen" type="HBoxContainer" parent="HBoxContainer2"]
-margin_left = 89.0
-margin_right = 176.0
+editor/display_folded = true
+margin_left = 156.0
+margin_right = 243.0
 margin_bottom = 40.0
 
 [node name="Label" type="Label" parent="HBoxContainer2/Ziegen"]
@@ -169,7 +101,7 @@ text = "     Ziegen:"
 margin_right = 16.0
 margin_bottom = 16.0
 rect_scale = Vector2( 0.25, 0.25 )
-texture = ExtResource( 8 )
+texture = ExtResource( 3 )
 
 [node name="Value" type="Label" parent="HBoxContainer2/Ziegen"]
 margin_left = 71.0
@@ -177,6 +109,113 @@ margin_top = 13.0
 margin_right = 87.0
 margin_bottom = 27.0
 text = "20"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -578.555
+margin_top = -41.1006
+margin_right = -33.5551
+margin_bottom = -9.10059
+alignment = 1
+
+[node name="FastForward" type="TextureButton" parent="HBoxContainer"]
+margin_left = 34.0
+margin_right = 66.0
+margin_bottom = 32.0
+texture_normal = ExtResource( 4 )
+
+[node name="Pause" type="TextureButton" parent="HBoxContainer"]
+pause_mode = 2
+margin_left = 70.0
+margin_right = 102.0
+margin_bottom = 32.0
+texture_normal = ExtResource( 5 )
+
+[node name="Shopping" parent="HBoxContainer" instance=ExtResource( 6 )]
+editor/display_folded = true
+margin_left = 106.0
+margin_top = 0.0
+margin_right = 210.0
+margin_bottom = 32.0
+
+[node name="Geld" type="HBoxContainer" parent="HBoxContainer"]
+margin_left = 214.0
+margin_right = 304.0
+margin_bottom = 32.0
+
+[node name="Label" type="Label" parent="HBoxContainer/Geld"]
+margin_top = 9.0
+margin_right = 54.0
+margin_bottom = 23.0
+text = "     Geld:"
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Geld/Label"]
+margin_right = 16.0
+margin_bottom = 16.0
+texture = ExtResource( 7 )
+
+[node name="Value" type="Label" parent="HBoxContainer/Geld"]
+margin_left = 58.0
+margin_top = 9.0
+margin_right = 90.0
+margin_bottom = 23.0
+text = "1000"
+
+[node name="Futter" type="HBoxContainer" parent="HBoxContainer"]
+editor/display_folded = true
+margin_left = 308.0
+margin_right = 402.0
+margin_bottom = 32.0
+
+[node name="Label" type="Label" parent="HBoxContainer/Futter"]
+margin_top = 9.0
+margin_right = 58.0
+margin_bottom = 23.0
+text = "    Futter:"
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Futter/Label"]
+margin_left = -2.21948
+margin_top = -6.60278
+margin_right = 20.7805
+margin_bottom = 33.3972
+rect_scale = Vector2( 0.8, 1 )
+texture = ExtResource( 2 )
+
+[node name="Value" type="Label" parent="HBoxContainer/Futter"]
+margin_left = 62.0
+margin_top = 9.0
+margin_right = 94.0
+margin_bottom = 23.0
+text = "1000"
+
+[node name="Energie" type="HBoxContainer" parent="HBoxContainer"]
+editor/display_folded = true
+margin_left = 406.0
+margin_right = 509.0
+margin_bottom = 32.0
+
+[node name="Label" type="Label" parent="HBoxContainer/Energie"]
+margin_top = 9.0
+margin_right = 67.0
+margin_bottom = 23.0
+text = "    Energie:"
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Energie/Label"]
+margin_left = -1.39722
+margin_top = -5.39722
+margin_right = 17.6028
+margin_bottom = 34.6028
+texture = ExtResource( 8 )
+
+[node name="Value" type="Label" parent="HBoxContainer/Energie"]
+margin_left = 71.0
+margin_top = 9.0
+margin_right = 103.0
+margin_bottom = 23.0
+text = "1000"
 [connection signal="pressed" from="HBoxContainer/FastForward" to="." method="_on_FastForward_pressed"]
 [connection signal="pressed" from="HBoxContainer/Pause" to="." method="toggle_pause"]
 [connection signal="add_field" from="HBoxContainer/Shopping" to="." method="_on_Shopping_add_field"]

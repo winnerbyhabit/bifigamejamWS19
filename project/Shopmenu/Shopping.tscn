@@ -1,16 +1,16 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://assets/Shop_button.png" type="Texture" id=1]
+[ext_resource path="res://assets/Shop_button2.png" type="Texture" id=1]
 [ext_resource path="res://Shopmenu/Shopping.gd" type="Script" id=2]
 [ext_resource path="res://assets/Sheep_Button.png" type="Texture" id=3]
 [ext_resource path="res://assets/Tower_Button.png" type="Texture" id=4]
 [ext_resource path="res://assets/Field_Button.png" type="Texture" id=5]
 
 [node name="ShopButton" type="TextureButton"]
-margin_left = 478.329
-margin_top = 533.715
-margin_right = 670.329
-margin_bottom = 593.715
+margin_left = 581.549
+margin_top = 546.35
+margin_right = 685.549
+margin_bottom = 578.35
 texture_normal = ExtResource( 1 )
 script = ExtResource( 2 )
 
