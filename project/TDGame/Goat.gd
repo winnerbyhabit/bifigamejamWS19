@@ -28,7 +28,7 @@ func loose():
 		emit_signal("loose")
 		set_process(false)
 		self.is_alive = false
-		#self.visible = false
+		self.visible = false
 		$CollisionShape2D.disabled = true
 
 func damage(damage_points):
