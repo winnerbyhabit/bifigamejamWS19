@@ -5,7 +5,7 @@
 [ext_resource path="res://sfx/Mäh2.ogg" type="AudioStream" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 23.6165
+radius = 18.2661
 
 [node name="Goat" type="KinematicBody2D" groups=[
 "goat",
@@ -20,7 +20,7 @@ position = Vector2( -2.63812, -22.8293 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0.865753, -13.4857 )
+position = Vector2( -3.66373, -8.30915 )
 shape = SubResource( 1 )
 
 [node name="die" type="AudioStreamPlayer2D" parent="."]

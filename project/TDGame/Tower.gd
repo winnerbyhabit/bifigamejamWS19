@@ -52,5 +52,12 @@ func _process(delta):
 		fire_threshold -= delta
 
 func _on_Animation_animation_finished():
-	print('finished')
 	$Animation.visible = false
+
+func show_tower_upgrade(value):
+	$Upgrade.visible = value
+
+func _on_Area2D_input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton:
+		if (event.is_pressed() and event.button_index == BUTTON_LEFT):
+			show_tower_upgrade(true)
