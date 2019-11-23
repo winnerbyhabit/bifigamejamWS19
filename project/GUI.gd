@@ -1,7 +1,7 @@
 extends Control
 
 signal add_tower
-
+signal next_wave
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -24,3 +24,7 @@ func _on_Shopping_add_tower():
 
 func toggle_pause():
 	get_tree().paused = not get_tree().paused
+
+
+func _on_FastForward_pressed():
+	emit_signal("next_wave")
