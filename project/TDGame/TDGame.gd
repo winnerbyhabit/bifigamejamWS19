@@ -76,8 +76,18 @@ func place_tower(position):
 		add_child(tower)
 
 func tower_placement_possible(position):
+	#prüfe ob weg
 	if $Navigation2D/TileMap.get_cell(position.x,position.y) != 15:
 		return false
+	
+	#prüffe ob anderer Turm
+	var children = self.get_children()
+	for c in children:
+		if c.is_in_group("tower"):
+			print(c.position,position* Vector2(gridsize,gridsize))
+			if c.position == position * Vector2(gridsize,gridsize) + Vector2(gridsize/2,gridsize/2):
+				return false
+	
 	return true
 	
 	#print('place tower on: ',position)
