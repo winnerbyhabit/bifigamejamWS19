@@ -3,7 +3,7 @@ extends Node2D
 export var geld = 100
 export var energie = 100
 export var futter = 100
-
+export var felder = 1
 
 export var base_costs_sheep = 50
 export var base_costs_field = 50
@@ -13,6 +13,8 @@ export var energy_production_per_sheep_per_second = 1
 export var foot_consumation_per_sheep_per_second = 1
 
 export var foot_consumation_per_goat_per_second = 1
+
+export var base_foot_production = 1
 
 export var base_tower_energy_consumation = 5
 
@@ -32,6 +34,7 @@ func _process(delta):
 		
 		update_futter(sheeps * foot_consumation_per_sheep_per_second * -1)
 		update_futter(goats * foot_consumation_per_goat_per_second * -1)
+		update_futter(felder * base_foot_production)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -67,3 +70,8 @@ func calculate_energy(anzahl):
 
 func _on_TDGame_tower_placed():
 	update_geld(-1 * base_costs_tower)
+
+
+func _on_field_placed():
+	felder += 1
+	$GUI.set_felder(felder)

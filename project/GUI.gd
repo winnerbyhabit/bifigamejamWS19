@@ -28,6 +28,9 @@ func set_schafe(value):
 func set_ziegen(value):
 	$HBoxContainer2/Ziegen/Value.text = str(value)
 
+func set_felder(value):
+	pass
+
 func _on_Shopping_add_tower():
 	emit_signal("add_tower")
 

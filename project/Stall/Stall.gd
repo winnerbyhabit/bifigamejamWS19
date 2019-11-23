@@ -1,11 +1,7 @@
 extends Node2D
 
-var sheep = 1
 
-var goat = 0
-
-var field = 1
-
+#tileset id
 var sheep_exists = 2
 
 var fieldplacement_active = false
@@ -13,6 +9,8 @@ var fieldplacement_active = false
 export var anzahl_kacheln = Vector2(8,9)
 
 export var gridsize = 64
+
+signal field_placed
 
 var field_cursor = load("res://assets/T22.png")
 
@@ -51,16 +49,14 @@ func place_field(position):
 	if field_placement_possible(position):
 		fieldplacement_active = false
 		Input.set_custom_mouse_cursor(null,Input.CURSOR_ARROW)
-		field += 1
 		$TileMap.set_cellv(position, field_id)
+		emit_signal("field_placed")
 
 func field_placement_possible(position):
 	if $TileMap.get_cellv(position) == buyable_field_id:
 		return true
 	return false
 	
-
-
 
 func _on_GUI_buy_sheep():
 	var ortx = rand_range(0, 7)
