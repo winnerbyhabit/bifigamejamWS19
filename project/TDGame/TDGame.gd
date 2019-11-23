@@ -67,12 +67,17 @@ func activate_tower_placement():
 
 
 func place_tower(position):
-	towerplacement_active = false
-	Input.set_custom_mouse_cursor(null,Input.CURSOR_ARROW)
-	var tower = tower_scene.instance()
-	tower.position = position * Vector2(gridsize,gridsize) + Vector2(gridsize/2,gridsize/2)
-	tower.show_tower_range(false)
-	add_child(tower)
-	
+	if tower_placement_possible(position):
+		towerplacement_active = false
+		Input.set_custom_mouse_cursor(null,Input.CURSOR_ARROW)
+		var tower = tower_scene.instance()
+		tower.position = position * Vector2(gridsize,gridsize) + Vector2(gridsize/2,gridsize/2)
+		tower.show_tower_range(false)
+		add_child(tower)
+
+func tower_placement_possible(position):
+	if $Navigation2D/TileMap.get_cell(position.x,position.y) != 15:
+		return false
+	return true
 	
 	#print('place tower on: ',position)
