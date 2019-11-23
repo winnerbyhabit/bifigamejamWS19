@@ -26,7 +26,8 @@ func target_entered(body):
 
 func target_exited(body):
 	if body.is_in_group("goat"):
-		current_targets.remove(current_targets.find(body))
+		if body.is_alive:
+			current_targets.remove(current_targets.find(body))
 
 func _process(delta):
 	$Reloadbar.value = firerate - fire_threshold
