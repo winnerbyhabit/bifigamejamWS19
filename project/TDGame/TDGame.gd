@@ -8,6 +8,23 @@ var waves = []
 
 var threshold = 0
 
+var towerplacement_active = false
+
+export var gridsize = 64
+
+export var anzahl_kacheln = Vector2(8,9)
+
+func _input(event):
+	if towerplacement_active:
+		if Input.is_action_pressed("left_click"):
+			var click_position = event.position
+			click_position.x = floor(click_position.x / gridsize)
+			click_position.y = floor(click_position.y / gridsize)
+			if click_position.x >= 0 and click_position.x < anzahl_kacheln.x and click_position.y >= 0 and click_position.y < anzahl_kacheln.y: 
+				place_tower(click_position)
+			
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var file = File.new()
@@ -40,4 +57,10 @@ func spawn_goat():
 	var goat = scene.instance()
 	add_child(goat)
 	goat.connect("win",self,"on_goat_win")
-	
+
+func activate_tower_placement():
+	towerplacement_active = true
+
+func place_tower(position):
+	towerplacement_active = false
+	print('place tower on: ',position)

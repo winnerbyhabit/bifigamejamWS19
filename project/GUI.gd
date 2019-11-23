@@ -1,5 +1,7 @@
 extends Control
 
+signal add_tower
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -15,3 +17,6 @@ func set_futter(value):
 
 func set_energie(value):
 	$HBoxContainer/Energie/Value.text = value
+
+func _on_Shopping_add_tower():
+	emit_signal("add_tower")

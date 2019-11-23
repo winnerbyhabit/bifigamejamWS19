@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://GUI.gd" type="Script" id=1]
 [ext_resource path="res://assets/CoinMini.png" type="Texture" id=2]
 [ext_resource path="res://assets/Futter.png" type="Texture" id=3]
 [ext_resource path="res://assets/Energy.png" type="Texture" id=4]
+[ext_resource path="res://Shopmenu/Shopping.tscn" type="PackedScene" id=5]
 
 [node name="GUI" type="Control"]
 anchor_left = 1.0
@@ -99,3 +100,7 @@ margin_top = 13.0
 margin_right = 103.0
 margin_bottom = 27.0
 text = "1000"
+
+[node name="Shopping" parent="HBoxContainer" instance=ExtResource( 5 )]
+position = Vector2( -666.287, -549.081 )
+[connection signal="add_tower" from="HBoxContainer/Shopping" to="." method="_on_Shopping_add_tower"]
