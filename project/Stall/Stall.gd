@@ -6,6 +6,8 @@ var goat = 0
 
 var field = 1
 
+var sheep_exists = 2
+
 var fieldplacement_active = false
 
 export var anzahl_kacheln = Vector2(8,9)
@@ -19,6 +21,7 @@ var buyable_field_id = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	randomize()
 	pass # Replace with function body.
 
 func add_sheep(sheep):
@@ -57,3 +60,11 @@ func field_placement_possible(position):
 	return false
 	
 
+
+
+func _on_GUI_buy_sheep():
+	var ortx = rand_range(0, 7)
+	var orty = rand_range(0, 3)
+	var ort = Vector2(ortx, orty)
+	if $TileMap.get_cellv(ort) != sheep_exists :
+		$TileMap.set_cellv(ort, sheep_exists)
