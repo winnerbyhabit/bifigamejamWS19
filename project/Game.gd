@@ -12,7 +12,11 @@ export var base_costs_tower = 50
 export var energy_production_per_sheep_per_second = 1
 export var foot_consumation_per_sheep_per_second = 1
 
+export var foot_consumation_per_goat_per_second = 1
+
 export var sheeps = 1
+export var goats = 0
+
 
 var threshold = 1
 
@@ -25,12 +29,14 @@ func _process(delta):
 		update_energy(sheeps * energy_production_per_sheep_per_second)
 		
 		update_futter(sheeps * foot_consumation_per_sheep_per_second * -1)
+		update_futter(goats * foot_consumation_per_goat_per_second * -1)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	update_geld(0)
 	update_energy(0)
 	$GUI.set_schafe(sheeps)
+	$GUI.set_ziegen(goats)
 
 func update_energy(energy_add):
 	energie += energy_add
@@ -50,7 +56,9 @@ func _on_GUI_buy_sheep():
 	update_geld(-1*base_costs_sheep)
 	$GUI.set_schafe(sheeps)
 
-
+func add_goat():
+	goats += 1
+	$GUI.set_ziegen(goats)
 
 
 func _on_TDGame_tower_placed():

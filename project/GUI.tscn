@@ -127,7 +127,7 @@ text = "1000"
 [node name="HBoxContainer2" type="HBoxContainer" parent="."]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -85.0
+margin_left = -180.0
 margin_bottom = 40.0
 
 [node name="Schafe" type="HBoxContainer" parent="HBoxContainer2"]
@@ -150,6 +150,30 @@ texture = ExtResource( 8 )
 margin_left = 69.0
 margin_top = 13.0
 margin_right = 85.0
+margin_bottom = 27.0
+text = "20"
+
+[node name="Ziegen" type="HBoxContainer" parent="HBoxContainer2"]
+margin_left = 89.0
+margin_right = 176.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="HBoxContainer2/Ziegen"]
+margin_top = 13.0
+margin_right = 67.0
+margin_bottom = 27.0
+text = "     Ziegen:"
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer2/Ziegen/Label"]
+margin_right = 16.0
+margin_bottom = 16.0
+rect_scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 8 )
+
+[node name="Value" type="Label" parent="HBoxContainer2/Ziegen"]
+margin_left = 71.0
+margin_top = 13.0
+margin_right = 87.0
 margin_bottom = 27.0
 text = "20"
 [connection signal="pressed" from="HBoxContainer/FastForward" to="." method="_on_FastForward_pressed"]

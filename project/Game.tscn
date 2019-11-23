@@ -17,6 +17,7 @@ margin_left = 539.0
 margin_top = 0.0
 margin_right = 1024.0
 margin_bottom = 600.0
+[connection signal="goat_win" from="TDGame" to="." method="add_goat"]
 [connection signal="recieve_coins" from="TDGame" to="." method="update_geld"]
 [connection signal="tower_placed" from="TDGame" to="." method="_on_TDGame_tower_placed"]
 [connection signal="add_tower" from="GUI" to="TDGame" method="activate_tower_placement"]
