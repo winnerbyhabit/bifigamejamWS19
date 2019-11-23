@@ -3,7 +3,7 @@ extends Node2D
 var goat_scene = load("res://TDGame/Goat.tscn")
 var tower_scene = load("res://TDGame/Tower.tscn")
 
-var tower_cursor = load("res://assets/Tower_1.png")
+var tower_cursor = load("res://assets/Turm1x.png")
 
 export(String, FILE) var wavesTXT
 

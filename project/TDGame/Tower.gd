@@ -43,6 +43,14 @@ func _process(delta):
 	
 		if shoot:
 			fire_threshold += firerate
+			$Animation.set_frame(0)
+			$Animation.play("attack")
+			
+			$Animation.visible = true
 		emit_signal("tower_fired",current_targets.size())
 	else:
 		fire_threshold -= delta
+
+func _on_Animation_animation_finished():
+	print('finished')
+	$Animation.visible = false
