@@ -3,6 +3,8 @@ extends Node2D
 var goat_scene = load("res://TDGame/Goat.tscn")
 var tower_scene = load("res://TDGame/Tower.tscn")
 
+var tower_cursor = load("res://assets/Tower_1.png")
+
 export(String, FILE) var wavesTXT
 
 var waves = []
@@ -61,11 +63,16 @@ func spawn_goat():
 
 func activate_tower_placement():
 	towerplacement_active = true
+	Input.set_custom_mouse_cursor(tower_cursor,0,Vector2(gridsize/2,gridsize/2))
+
 
 func place_tower(position):
 	towerplacement_active = false
+	Input.set_custom_mouse_cursor(null,Input.CURSOR_ARROW)
 	var tower = tower_scene.instance()
 	tower.position = position * Vector2(gridsize,gridsize) + Vector2(gridsize/2,gridsize/2)
 	tower.show_tower_range(false)
 	add_child(tower)
-	print('place tower on: ',position)
+	
+	
+	#print('place tower on: ',position)
