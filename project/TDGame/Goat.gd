@@ -4,10 +4,12 @@ extends KinematicBody2D
 # var a = 2
 # var b = "text"
 
+export var lifepoints = 5
 
 export var destination = Vector2(500,150)
 
 signal win
+signal loose
 
 export var SPEED = 100
 var path = []
@@ -19,6 +21,15 @@ func _ready():
 func win():
 	emit_signal("win")
 	queue_free()
+
+func loose():
+	emit_signal("loose")
+	queue_free()
+
+func damage(damage_points):
+	lifepoints -= damage_points
+	if lifepoints < 0:
+		loose()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 # warning-ignore:unused_argument
