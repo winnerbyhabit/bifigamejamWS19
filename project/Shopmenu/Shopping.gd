@@ -29,3 +29,4 @@ func _on_ShopButton_pressed():
 
 func toggle_menu():
 	$VBoxContainer.visible = not $VBoxContainer.visible
+	$Background.visible = not $Background.visible

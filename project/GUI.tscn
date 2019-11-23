@@ -126,4 +126,6 @@ margin_bottom = 37.0
 text = "1000"
 [connection signal="pressed" from="HBoxContainer/FastForward" to="." method="_on_FastForward_pressed"]
 [connection signal="pressed" from="HBoxContainer/Pause" to="." method="toggle_pause"]
+[connection signal="add_field" from="HBoxContainer/Shopping" to="." method="_on_Shopping_add_field"]
+[connection signal="add_sheep" from="HBoxContainer/Shopping" to="." method="_on_Shopping_add_sheep"]
 [connection signal="add_tower" from="HBoxContainer/Shopping" to="." method="_on_Shopping_add_tower"]

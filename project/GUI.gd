@@ -2,6 +2,10 @@ extends Control
 
 signal add_tower
 signal next_wave
+signal buy_sheep
+signal buy_field
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -28,3 +32,10 @@ func toggle_pause():
 
 func _on_FastForward_pressed():
 	emit_signal("next_wave")
+
+
+func _on_Shopping_add_sheep():
+	emit_signal("buy_sheep")
+
+func _on_Shopping_add_field():
+	emit_signal("buy_field")
