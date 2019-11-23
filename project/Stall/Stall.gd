@@ -46,7 +46,7 @@ func place_field(position):
 		fieldplacement_active = false
 		Input.set_custom_mouse_cursor(null,Input.CURSOR_ARROW)
 		#var tower = tower_scene.instance()
-		field.position = position * Vector2(gridsize,gridsize) + Vector2(gridsize/2,gridsize/2)
+		#field.position = position * Vector2(gridsize,gridsize) + Vector2(gridsize/2,gridsize/2)
 		#tower.show_tower_range(false)
 		#add_child(tower)
 		field += 1
