@@ -21,6 +21,7 @@ export var goat_kill_coins = 10
 
 signal recieve_coins(coins_count)
 signal goat_win
+signal tower_placed
 
 func _input(event):
 	if towerplacement_active:
@@ -81,6 +82,7 @@ func place_tower(position):
 		tower.position = position * Vector2(gridsize,gridsize) + Vector2(gridsize/2,gridsize/2)
 		tower.show_tower_range(false)
 		add_child(tower)
+		emit_signal("tower_placed")
 
 func tower_placement_possible(position):
 	#prüfe ob weg

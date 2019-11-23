@@ -25,6 +25,7 @@ func _process(delta):
 func _ready():
 	update_geld(0)
 	update_energy(0)
+	$GUI.set_schafe(sheeps)
 
 #energiekosten Türme
 func turmschuss(energie):
@@ -46,5 +47,12 @@ func update_geld(geld_add):
 	get_node("GUI").set_geld(geld)
 
 func _on_GUI_buy_sheep():
-	update_geld(-1*base_costs_sheep)
 	sheeps += 1
+	update_geld(-1*base_costs_sheep)
+	$GUI.set_schafe(sheeps)
+
+
+
+
+func _on_TDGame_tower_placed():
+	update_geld(-1 * base_costs_tower)
