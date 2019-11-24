@@ -50,7 +50,9 @@ func _on_Shopping_add_field():
 	emit_signal("buy_field")
 
 func _on_BackToMenu_pressed():
+# warning-ignore:return_value_discarded
 	get_tree().change_scene("res://Startmenu.tscn")
+	get_tree().paused = false
 
 
 func _on_Shopping_add_laser_tower():

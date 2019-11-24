@@ -220,6 +220,7 @@ margin_bottom = 23.0
 text = "1000"
 
 [node name="BackToMenu" type="TextureButton" parent="HBoxContainer"]
+pause_mode = 2
 margin_left = 495.0
 margin_right = 527.0
 margin_bottom = 32.0
