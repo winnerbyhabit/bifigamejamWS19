@@ -1,5 +1,6 @@
 extends Node2D
 
+var cow_scene = load("res://TDGame/Cow.tscn")
 var goat_scene = load("res://TDGame/Goat.tscn")
 var tower_scene = load("res://TDGame/Tower.tscn")
 
@@ -66,6 +67,8 @@ func _process(delta):
 		if waves.size() > 0:
 			if befehl[0] == "spawn":
 				spawn_goat()
+			elif befehl[0] == "cow":
+				spawn_cow()
 			elif befehl[0] == "pause":
 				threshold += float(befehl[1])
 			elif befehl[0] == "win":
@@ -83,6 +86,12 @@ func spawn_goat():
 	add_child(goat)
 	goat.connect("win",self,"on_goat_win")
 	goat.connect("loose",self,"on_goat_kill")
+
+func spawn_cow():
+	var cow = cow_scene.instance()
+	add_child(cow)
+	cow.connect("win",self,"on_goat_win")
+	cow.connect("loose",self,"on_goat_kill")
 
 func activate_tower_placement():
 	towerplacement_active = true
