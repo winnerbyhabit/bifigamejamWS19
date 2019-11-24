@@ -1,55 +1,30 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Game.gd" type="Script" id=1]
 [ext_resource path="res://TDGame/TDGame.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Stall/Stall.tscn" type="PackedScene" id=3]
-[ext_resource path="res://sfx/bg-music/Chad_Crouch_-_02_-_The_Ramble.ogg" type="AudioStream" id=4]
-[ext_resource path="res://assets/fonts/sheep_font.res" type="DynamicFont" id=5]
-[ext_resource path="res://sfx/bg-music/Ketsa_-_05_-_Nature_Shuffle.ogg" type="AudioStream" id=6]
-[ext_resource path="res://GUI.tscn" type="PackedScene" id=7]
+[ext_resource path="res://GUI.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sfx/bg-music/Chad_Crouch_-_02_-_The_Ramble.ogg" type="AudioStream" id=5]
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 1 )
+multihit_energy_conumation_factor = 1.3
 
 [node name="TDGame" parent="." instance=ExtResource( 2 )]
 
 [node name="Stall" parent="." instance=ExtResource( 3 )]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 4 )
-autoplay = true
-
-[node name="LostScreen" type="ColorRect" parent="."]
-pause_mode = 2
-visible = false
-margin_right = 1024.0
-margin_bottom = 600.0
-color = Color( 1, 1, 1, 0.654902 )
-
-[node name="Label" type="Label" parent="LostScreen"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -339.5
-margin_top = -102.5
-margin_right = 339.5
-margin_bottom = 102.5
-custom_fonts/font = ExtResource( 5 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "You Lost 
-The Game"
-
-[node name="Death_audiostream" type="AudioStreamPlayer" parent="LostScreen"]
-pause_mode = 2
-stream = ExtResource( 6 )
-
-[node name="GUI" parent="." instance=ExtResource( 7 )]
+[node name="GUI" parent="." instance=ExtResource( 4 )]
 margin_left = 539.0
 margin_top = 0.0
 margin_right = 1024.0
 margin_bottom = 600.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
 [connection signal="goat_win" from="TDGame" to="." method="add_goat"]
+[connection signal="goat_win" from="TDGame" to="Stall" method="_on_TDGame_goat_win"]
 [connection signal="recieve_coins" from="TDGame" to="." method="update_geld"]
 [connection signal="tower_fired" from="TDGame" to="." method="calculate_energy"]
 [connection signal="tower_placed" from="TDGame" to="." method="_on_TDGame_tower_placed"]
