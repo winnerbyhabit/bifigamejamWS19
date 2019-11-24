@@ -17,6 +17,7 @@ export var foot_consumation_per_goat_per_second = 1
 export var base_foot_production = 1
 
 export var base_tower_energy_consumation = 5
+export var multihit_energy_conumation_factor = 1.1
 
 export var sheeps = 1
 export var goats = 0
@@ -76,6 +77,7 @@ func add_goat():
 	$GUI.set_ziegen(goats)
 
 func calculate_energy(anzahl):
+	var e = floor(-1 * base_tower_energy_consumation + (anzahl-1) * base_tower_energy_consumation * multihit_energy_conumation_factor)
 	update_energy(-1 * anzahl * base_tower_energy_consumation)
 
 func _on_TDGame_tower_placed():

@@ -56,7 +56,7 @@ func _process(delta):
 				else:
 					current_targets.remove(current_targets.find(target))
 				
-				if is_lasertower:
+				if is_lasertower and is_instance_valid( target ):
 					var line = Line2D.new()
 					line.add_point(Vector2(0,0))
 					line.add_point(target.position - position)
