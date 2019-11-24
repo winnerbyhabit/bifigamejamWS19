@@ -72,9 +72,8 @@ func _process(delta):
 				if not is_lasertower:
 					$Animation.set_frame(0)
 					$Animation.play("attack")
-				
-				
 					$Animation.visible = true
+					
 			emit_signal("tower_fired",current_targets.size())
 		else:
 			fire_threshold -= delta

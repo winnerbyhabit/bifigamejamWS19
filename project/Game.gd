@@ -46,7 +46,11 @@ func _process(delta):
 		update_futter(sheeps * foot_consumation_per_sheep_per_second * -1)
 		update_futter(goats * foot_consumation_per_goat_per_second * -1)
 		update_futter(felder * base_foot_production)
-
+	if check_if_lost():
+		$LostScreen.visible = true
+		get_tree().paused = true
+		$LostScreen/Death_audiostream.play(0)
+		
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	update_geld(0)
@@ -93,4 +97,7 @@ func _on_field_placed():
 	$GUI.set_food_per_sec(felder * base_foot_production)
 	update_geld(-1*base_costs_field)
 
-
+func check_if_lost():
+	if goats > 5 and goats > sheeps:
+		return true
+	return false
