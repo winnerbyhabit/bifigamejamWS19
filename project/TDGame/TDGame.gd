@@ -4,7 +4,7 @@ var goat_scene = load("res://TDGame/Goat.tscn")
 var tower_scene = load("res://TDGame/Tower.tscn")
 
 var tower_cursor = load("res://assets/Turm1x.png")
-var laser_tower_cursor = load("res://assets/Tower_1.png")
+var laser_tower_cursor = load("res://assets/LaserTurm.png")
 
 export(String, FILE) var wavesTXT
 

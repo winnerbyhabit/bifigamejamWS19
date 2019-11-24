@@ -19,7 +19,7 @@ signal tower_upgraded
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if is_lasertower:
-		$Sprite.texture = load("res://assets/Tower_1.png")
+		$Sprite.texture = load("res://assets/LaserTurm.png")
 		firerate = laser_firerate
 	$Area2D/CollisionShape2D.shape.set_radius(tower_range)
 	$Circle.radius = tower_range
@@ -58,7 +58,7 @@ func _process(delta):
 				
 				if is_lasertower and is_instance_valid( target ):
 					var line = Line2D.new()
-					line.add_point(Vector2(0,0))
+					line.add_point(Vector2(0,-10))
 					line.add_point(target.position - position)
 					line.add_to_group('laser')
 					line.default_color = laser_color
