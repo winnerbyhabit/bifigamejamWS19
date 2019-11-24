@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Button_base1.png-fe3207ea8cc09dc601e82f3956dd4ca5.stex"
+path="res://.import/Laser3.png-f706308830a68c92f95b8f06cf328a6d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Button_base1.png"
-dest_files=[ "res://.import/Button_base1.png-fe3207ea8cc09dc601e82f3956dd4ca5.stex" ]
+source_file="res://assets/Laser3.png"
+dest_files=[ "res://.import/Laser3.png-f706308830a68c92f95b8f06cf328a6d.stex" ]
 
 [params]
 

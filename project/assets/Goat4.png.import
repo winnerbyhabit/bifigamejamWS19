@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pause_button.png-61d13533c93f6302f01052c4a23b51bd.stex"
+path="res://.import/Goat4.png-eea21d4154a3789dfe00381d16fc313c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pause_button.png"
-dest_files=[ "res://.import/pause_button.png-61d13533c93f6302f01052c4a23b51bd.stex" ]
+source_file="res://assets/Goat4.png"
+dest_files=[ "res://.import/Goat4.png-eea21d4154a3789dfe00381d16fc313c.stex" ]
 
 [params]
 
