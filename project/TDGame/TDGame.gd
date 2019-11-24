@@ -49,7 +49,7 @@ func _input(event):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$Navigation2D.add_child(level.instance())
+	#$Navigation2D.add_child(level.instance())
 	
 	var file = File.new()
 	if file.file_exists(wavesTXT):
@@ -164,3 +164,8 @@ func enable_shooting(value):
 func activate_laser_tower_placement():
 	lasertowerplacement_active = true
 	Input.set_custom_mouse_cursor(laser_tower_cursor,0,Vector2(gridsize/2,gridsize/2))
+
+
+func load_level(node):
+	$Navigation2D.add_child(node)
+	$Navigation2D.navpoly_remove(0)
