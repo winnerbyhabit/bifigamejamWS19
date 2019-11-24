@@ -17,7 +17,7 @@ _global_script_class_icons={
 
 config/name="bifigamejamWS19"
 run/main_scene="res://Startmenu.tscn"
-config/icon="res://icon.png"
+config/icon="res://Icon.png"
 
 [display]
 

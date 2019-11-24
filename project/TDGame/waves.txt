@@ -43,6 +43,25 @@ pause 1
 spawn
 ====================================
 pause 20
+cow
+pause 0.3
+cow
+pause 0.3
+cow
+pause 0.3
+cow
+pause 0.3
+cow
+pause 0.3
+cow
+pause 0.3
+cow
+pause 0.3
+cow
+pause 0.3
+cow
+pause 0.3
+cow
 spawn
 pause 1
 spawn
