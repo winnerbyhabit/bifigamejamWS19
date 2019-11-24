@@ -8,6 +8,8 @@ var laser_tower_cursor = load("res://assets/LaserTurm.png")
 
 export(String, FILE) var wavesTXT
 
+export(PackedScene) var level
+
 var waves = []
 
 var threshold = 0
@@ -47,6 +49,8 @@ func _input(event):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$Navigation2D.add_child(level.instance())
+	
 	var file = File.new()
 	if file.file_exists(wavesTXT):
 		file.open(wavesTXT, file.READ)
