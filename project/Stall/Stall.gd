@@ -62,7 +62,7 @@ func field_placement_possible(position):
 	return false
 	
 
-func _on_GUI_buy_sheep():
+func place_sheep_in_stall():
 	var ortx = rand_range(0, 7)
 	var orty = rand_range(0, 3)
 	var ort = Vector2(ortx, orty)

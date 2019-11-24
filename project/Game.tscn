@@ -59,5 +59,4 @@ margin_bottom = 600.0
 [connection signal="add_tower" from="GUI" to="TDGame" method="activate_tower_placement"]
 [connection signal="buy_field" from="GUI" to="Stall" method="activate_field_placement"]
 [connection signal="buy_sheep" from="GUI" to="." method="_on_GUI_buy_sheep"]
-[connection signal="buy_sheep" from="GUI" to="Stall" method="_on_GUI_buy_sheep"]
 [connection signal="next_wave" from="GUI" to="TDGame" method="next_wave"]
