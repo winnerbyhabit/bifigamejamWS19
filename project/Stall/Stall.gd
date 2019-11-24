@@ -68,6 +68,8 @@ func place_sheep_in_stall():
 	var ort = Vector2(ortx, orty)
 	if $TileMap.get_cellv(ort) != sheep_exists and $TileMap.get_cellv(ort) != goat_exists :
 		$TileMap.set_cellv(ort, sheep_exists)
+	else:
+		place_sheep_in_stall()
 
 
 func _on_TDGame_goat_win():
@@ -76,3 +78,5 @@ func _on_TDGame_goat_win():
 	var ort = Vector2(ortx, orty)
 	if $TileMap.get_cellv(ort) != sheep_exists and $TileMap.get_cellv(ort) != goat_exists :
 		$TileMap.set_cellv(ort, goat_exists)
+	else:
+		_on_TDGame_goat_win()
