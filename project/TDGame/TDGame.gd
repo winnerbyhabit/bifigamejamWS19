@@ -40,6 +40,7 @@ func _input(event):
 					place_lasertower(click_position)
 		if Input.is_action_pressed("cancel"):
 			towerplacement_active = false
+			lasertowerplacement_active = false
 			Input.set_custom_mouse_cursor(null,Input.CURSOR_ARROW)
 
 
@@ -97,7 +98,7 @@ func place_tower(position):
 
 func place_lasertower(position):
 	if tower_placement_possible(position):
-		towerplacement_active = false
+		lasertowerplacement_active = false
 		Input.set_custom_mouse_cursor(null,Input.CURSOR_ARROW)
 		var tower = tower_scene.instance()
 		tower.position = position * Vector2(gridsize,gridsize) + Vector2(gridsize/2,gridsize/2)
