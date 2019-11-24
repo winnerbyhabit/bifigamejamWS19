@@ -21,6 +21,7 @@ multihit_energy_conumation_factor = 1.3
 [node name="Stall" parent="." instance=ExtResource( 3 )]
 
 [node name="LostScreen" type="ColorRect" parent="."]
+editor/display_folded = true
 visible = false
 margin_right = 1024.0
 margin_bottom = 600.0
