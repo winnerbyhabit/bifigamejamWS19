@@ -111,6 +111,7 @@ func is_there_money_for_field():
 	return false
 
 func _on_field_placed():
+	$GUI.show_notification("Gelder für Felder")
 	felder += 1
 	$GUI.set_food_per_sec(felder * base_foot_production)
 	update_geld(-1*base_costs_field)
