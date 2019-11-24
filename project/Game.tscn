@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Game.gd" type="Script" id=1]
 [ext_resource path="res://TDGame/TDGame.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://assets/Gras.jpg" type="Texture" id=8]
 [ext_resource path="res://assets/level1_preview.png" type="Texture" id=9]
 [ext_resource path="res://assets/level2_preview.png" type="Texture" id=10]
+[ext_resource path="res://sfx/BeepBeep.ogg" type="AudioStream" id=11]
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 1 )
@@ -108,8 +109,13 @@ margin_left = 132.0
 margin_right = 260.0
 margin_bottom = 128.0
 texture_normal = ExtResource( 10 )
-[connection signal="goat_win" from="TDGame" to="." method="add_goat"]
+
+[node name="beep_beep" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = 1.25
+pitch_scale = 1.25
 [connection signal="goat_win" from="TDGame" to="Stall" method="_on_TDGame_goat_win"]
+[connection signal="goat_win" from="TDGame" to="." method="add_goat"]
 [connection signal="recieve_coins" from="TDGame" to="." method="update_geld"]
 [connection signal="tower_fired" from="TDGame" to="." method="calculate_energy"]
 [connection signal="tower_placed" from="TDGame" to="." method="_on_TDGame_tower_placed"]

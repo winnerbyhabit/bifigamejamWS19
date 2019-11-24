@@ -86,6 +86,7 @@ func _on_GUI_buy_sheep():
 		update_geld(-1*base_costs_sheep)
 		$GUI.set_schafe(sheeps)
 		$Stall.place_sheep_in_stall()
+		$beep_beep.play(0)
 
 func add_goat():
 
