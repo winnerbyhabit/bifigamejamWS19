@@ -12,7 +12,8 @@ func _on_Start_pressed():
 	get_tree().change_scene("res://Game.tscn")
 
 func _on_Credits_pressed():
-	get_tree().change_scene("res://Credits.tscn")
+	#get_tree().change_scene("res://Credits.tscn")
+	$Credits_screen.visible = true
 
 func _on_Quit_pressed():
 	get_tree().quit()

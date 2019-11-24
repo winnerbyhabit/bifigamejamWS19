@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Startmenu.gd" type="Script" id=1]
 [ext_resource path="res://assets/Gras.jpg" type="Texture" id=2]
 [ext_resource path="res://assets/Menu_buttons.png" type="Texture" id=3]
 [ext_resource path="res://assets/fonts/Lavi.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://sfx/bg-music/Ketsa_-_05_-_Nature_Shuffle.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Credits.tscn" type="PackedScene" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 49
@@ -84,6 +85,9 @@ text = "Exit"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
 autoplay = true
+
+[node name="Credits_screen" parent="." instance=ExtResource( 6 )]
+visible = false
 [connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
 [connection signal="pressed" from="Credits" to="." method="_on_Credits_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
