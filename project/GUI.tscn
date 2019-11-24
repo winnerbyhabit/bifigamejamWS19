@@ -227,7 +227,6 @@ margin_bottom = 32.0
 texture_normal = ExtResource( 10 )
 
 [node name="Notification" type="ColorRect" parent="."]
-visible = false
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -411.0

@@ -59,10 +59,11 @@ position = Vector2( 500, 415 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
 animation = "AngryAnim"
+frame = 1
 playing = true
 
 [node name="GUI" parent="." instance=ExtResource( 8 )]
-margin_left = 3.0
+margin_left = 512.0
 margin_top = 0.0
 margin_right = 1024.0
 margin_bottom = 595.0
