@@ -1,0 +1,1721 @@
+pause 5
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
+spawn
+pause 2
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
