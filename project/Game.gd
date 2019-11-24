@@ -46,7 +46,7 @@ func _process(delta):
 		update_futter(felder * base_foot_production)
 		
 		#energy
-		var food_consumation = sheeps * foot_consumation_per_sheep_per_second * -1 + goats * foot_consumation_per_goat_per_second
+		var food_consumation = sheeps * foot_consumation_per_sheep_per_second * -1 + -1 * goats * foot_consumation_per_goat_per_second
 		if food_consumation < futter:
 			update_futter(food_consumation)
 			update_energy(sheeps * energy_production_per_sheep_per_second)
