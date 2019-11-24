@@ -9,7 +9,7 @@
 [ext_resource path="res://assets/Goat1.png" type="Texture" id=7]
 [ext_resource path="res://assets/Fast_Forward2.png" type="Texture" id=8]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 size = 19
 font_data = ExtResource( 4 )
 
@@ -30,18 +30,18 @@ margin_bottom = 600.0
 alignment = 1
 
 [node name="credittitle" type="Label" parent="MarginContainer/VBoxContainer"]
-margin_top = 62.0
+margin_top = 15.0
 margin_right = 1025.0
-margin_bottom = 163.0
+margin_bottom = 116.0
 custom_fonts/font = ExtResource( 3 )
 text = "Credits"
 align = 1
 
 [node name="credittext" type="Label" parent="MarginContainer/VBoxContainer"]
-margin_top = 167.0
+margin_top = 110.0
 margin_right = 1025.0
-margin_bottom = 538.0
-custom_fonts/font = SubResource( 2 )
+margin_bottom = 569.0
+custom_fonts/font = SubResource( 1 )
 text = "
 Programming:
 Christoph Heinen, Simon Klein
@@ -49,8 +49,11 @@ Christoph Heinen, Simon Klein
 Head of Graphics:
 Micah Röbkes
 
-Pixel Art, Menüs:
+Pixel Art, Menus, Minor Graphics:
 Bettina Esser
+
+Storytelling:
+Justin Schmitz, Bettina Esser
 
 Support:
 Armin Richter
@@ -58,21 +61,22 @@ Armin Richter
 Music:
 freemusicarchive.org
 
-Dieses Spiel ist während des BifiGameJamWS19 entstanden"
+Dieses Spiel ist während des BifiGameJamWS19 entstanden
+Keine Ziegen kamen bei der Entwicklung dieses Spiels zu schaden"
 align = 1
 
 [node name="Sprite" type="Sprite" parent="MarginContainer"]
-position = Vector2( 307.421, 369.474 )
+position = Vector2( 286.368, 423.158 )
 scale = Vector2( 1.8, 1.8 )
 texture = ExtResource( 5 )
 
 [node name="Sprite3" type="Sprite" parent="MarginContainer"]
-position = Vector2( 744.211, 351.579 )
+position = Vector2( 744.211, 341 )
 scale = Vector2( 2, 1.5 )
 texture = ExtResource( 6 )
 
 [node name="Sprite4" type="Sprite" parent="MarginContainer"]
-position = Vector2( 744.232, 281.914 )
+position = Vector2( 744.232, 271 )
 scale = Vector2( 1.8, 1.8 )
 texture = ExtResource( 7 )
 
