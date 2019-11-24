@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Lobo_Loco_-_09_-_Kessy_Swings_Endless_-_ID_349.ogg-762e867e905455fc7dd53ac8ae545955.oggstr"
+
+[deps]
+
+source_file="res://sfx/bg-music/Lobo_Loco_-_09_-_Kessy_Swings_Endless_-_ID_349.ogg"
+dest_files=[ "res://.import/Lobo_Loco_-_09_-_Kessy_Swings_Endless_-_ID_349.ogg-762e867e905455fc7dd53ac8ae545955.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

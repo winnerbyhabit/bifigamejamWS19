@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/Gras.jpg" type="Texture" id=2]
 [ext_resource path="res://assets/Menu_buttons.png" type="Texture" id=3]
 [ext_resource path="res://assets/fonts/Lavi.ttf" type="DynamicFontData" id=4]
-[ext_resource path="res://sfx/bg-music/Ketsa_-_05_-_Nature_Shuffle.ogg" type="AudioStream" id=5]
+[ext_resource path="res://sfx/bg-music/Lobo_Loco_-_09_-_Kessy_Swings_Endless_-_ID_349.ogg" type="AudioStream" id=5]
 [ext_resource path="res://Credits.tscn" type="PackedScene" id=6]
 
 [sub_resource type="DynamicFont" id=1]

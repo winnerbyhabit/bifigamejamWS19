@@ -9,6 +9,7 @@ func _ready():
 	pass # Replace with function body.
 
 func _on_Start_pressed():
+# warning-ignore:return_value_discarded
 	get_tree().change_scene("res://Game.tscn")
 
 func _on_Credits_pressed():
