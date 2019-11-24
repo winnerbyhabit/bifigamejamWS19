@@ -168,4 +168,3 @@ func activate_laser_tower_placement():
 
 func load_level(node):
 	$Navigation2D.add_child(node)
-	$Navigation2D.navpoly_remove(0)
