@@ -49,12 +49,12 @@ func activate_field_placement():
 	Input.set_custom_mouse_cursor(field_cursor,0,Vector2(gridsize/2,gridsize/2))
 
 func place_field(position):
-	print('place field: ' ,position)
-	if field_placement_possible(position):
-		fieldplacement_active = false
-		Input.set_custom_mouse_cursor(null,Input.CURSOR_ARROW)
-		$TileMap.set_cellv(position, field_id)
-		emit_signal("field_placed")
+	if get_parent().is_there_money_for_field():
+		if field_placement_possible(position):
+			fieldplacement_active = false
+			Input.set_custom_mouse_cursor(null,Input.CURSOR_ARROW)
+			$TileMap.set_cellv(position, field_id)
+			emit_signal("field_placed")
 
 func field_placement_possible(position):
 	if $TileMap.get_cellv(position) == buyable_field_id:
