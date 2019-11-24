@@ -40,12 +40,16 @@ func _process(delta):
 	if threshold < 0:
 		threshold += 1
 		
-		#energy
-		update_energy(sheeps * energy_production_per_sheep_per_second)
-		
-		update_futter(sheeps * foot_consumation_per_sheep_per_second * -1)
-		update_futter(goats * foot_consumation_per_goat_per_second * -1)
+		#futter ernten
 		update_futter(felder * base_foot_production)
+		
+		#energy
+		var food_consumation = sheeps * foot_consumation_per_sheep_per_second * -1 + goats * foot_consumation_per_goat_per_second
+		if food_consumation < futter:
+			update_futter(food_consumation)
+			update_energy(sheeps * energy_production_per_sheep_per_second)
+		
+
 	if check_if_lost():
 		$LostScreen.visible = true
 		get_tree().paused = true
@@ -72,9 +76,11 @@ func update_futter(futter_add):
 	$GUI.set_futter(futter)
 
 func _on_GUI_buy_sheep():
-	sheeps += 1
-	update_geld(-1*base_costs_sheep)
-	$GUI.set_schafe(sheeps)
+	if geld >=base_costs_sheep:
+		sheeps += 1
+		update_geld(-1*base_costs_sheep)
+		$GUI.set_schafe(sheeps)
+		$Stall.place_sheep_in_stall()
 
 func add_goat():
 	goats += 1
@@ -89,6 +95,11 @@ func _on_TDGame_tower_placed():
 
 func is_there_money_for_tower():
 	if geld >= base_costs_tower:
+		return true
+	return false
+
+func is_there_money_for_field():
+	if geld >= base_costs_field:
 		return true
 	return false
 
