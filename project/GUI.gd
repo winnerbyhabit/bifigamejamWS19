@@ -1,6 +1,7 @@
 extends Control
 
 signal add_tower
+signal add_laser_tower
 signal next_wave
 signal buy_sheep
 signal buy_field
@@ -50,3 +51,7 @@ func _on_Shopping_add_field():
 
 func _on_BackToMenu_pressed():
 	get_tree().change_scene("res://Startmenu.tscn")
+
+
+func _on_Shopping_add_laser_tower():
+	emit_signal("add_laser_tower")

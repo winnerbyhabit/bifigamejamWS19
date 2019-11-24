@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/Shop_button2.png" type="Texture" id=1]
 [ext_resource path="res://Shopmenu/Shopping.gd" type="Script" id=2]
 [ext_resource path="res://assets/Sheep_Button.png" type="Texture" id=3]
 [ext_resource path="res://assets/Tower_Button.png" type="Texture" id=4]
-[ext_resource path="res://assets/Field_Button.png" type="Texture" id=5]
+[ext_resource path="res://assets/Tower_Butt_Laser.png" type="Texture" id=5]
+[ext_resource path="res://assets/Field_Button.png" type="Texture" id=6]
 
 [node name="ShopButton" type="TextureButton"]
 margin_left = 581.549
@@ -16,38 +17,44 @@ script = ExtResource( 2 )
 
 [node name="Background" type="ColorRect" parent="."]
 visible = false
-margin_left = -12.0
-margin_top = -195.0
-margin_right = 188.0
-margin_bottom = 5.0
+margin_left = 5.96191
+margin_top = -274.204
+margin_right = 205.962
+margin_bottom = 0.796204
 color = Color( 0.192157, 0.0352941, 0.0352941, 0.345098 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 visible = false
-margin_left = -12.0
-margin_top = -195.0
-margin_right = 188.0
-margin_bottom = 5.0
+margin_left = 5.72839
+margin_top = -267.784
+margin_right = 205.728
+margin_bottom = 0.216064
 alignment = 1
 
 [node name="SheepButton" type="TextureButton" parent="VBoxContainer"]
-margin_top = 2.0
 margin_right = 200.0
-margin_bottom = 66.0
+margin_bottom = 64.0
 texture_normal = ExtResource( 3 )
 
 [node name="TowerButton" type="TextureButton" parent="VBoxContainer"]
-margin_top = 70.0
+margin_top = 68.0
 margin_right = 200.0
-margin_bottom = 134.0
+margin_bottom = 132.0
 texture_normal = ExtResource( 4 )
 
-[node name="FieldButton" type="TextureButton" parent="VBoxContainer"]
-margin_top = 138.0
+[node name="LaserTowerButton" type="TextureButton" parent="VBoxContainer"]
+margin_top = 136.0
 margin_right = 200.0
-margin_bottom = 202.0
+margin_bottom = 200.0
 texture_normal = ExtResource( 5 )
+
+[node name="FieldButton" type="TextureButton" parent="VBoxContainer"]
+margin_top = 204.0
+margin_right = 200.0
+margin_bottom = 268.0
+texture_normal = ExtResource( 6 )
 [connection signal="pressed" from="." to="." method="toggle_menu"]
 [connection signal="pressed" from="VBoxContainer/SheepButton" to="." method="_on_SheepButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/TowerButton" to="." method="_on_TowerButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/LaserTowerButton" to="." method="_on_LaserTowerButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/FieldButton" to="." method="_on_FieldButton_pressed"]

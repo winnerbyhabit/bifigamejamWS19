@@ -6,6 +6,7 @@ func _ready():
 
 signal add_sheep;
 signal add_tower;
+signal add_laser_tower;
 signal add_field;
 
 
@@ -30,3 +31,7 @@ func _on_ShopButton_pressed():
 func toggle_menu():
 	$VBoxContainer.visible = not $VBoxContainer.visible
 	$Background.visible = not $Background.visible
+
+func _on_LaserTowerButton_pressed():
+	toggle_menu()
+	emit_signal("add_laser_tower")

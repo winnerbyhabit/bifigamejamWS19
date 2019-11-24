@@ -33,6 +33,7 @@ margin_bottom = 0.000244141
 color = Color( 0.192157, 0.0352941, 0.0352941, 0.345098 )
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="."]
+editor/display_folded = true
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -243.0
@@ -226,6 +227,7 @@ texture_normal = ExtResource( 9 )
 [connection signal="pressed" from="HBoxContainer/FastForward" to="." method="_on_FastForward_pressed"]
 [connection signal="pressed" from="HBoxContainer/Pause" to="." method="toggle_pause"]
 [connection signal="add_field" from="HBoxContainer/Shopping" to="." method="_on_Shopping_add_field"]
+[connection signal="add_laser_tower" from="HBoxContainer/Shopping" to="." method="_on_Shopping_add_laser_tower"]
 [connection signal="add_sheep" from="HBoxContainer/Shopping" to="." method="_on_Shopping_add_sheep"]
 [connection signal="add_tower" from="HBoxContainer/Shopping" to="." method="_on_Shopping_add_tower"]
 [connection signal="pressed" from="HBoxContainer/BackToMenu" to="." method="_on_BackToMenu_pressed"]

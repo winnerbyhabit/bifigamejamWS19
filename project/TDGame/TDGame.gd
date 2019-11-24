@@ -4,6 +4,7 @@ var goat_scene = load("res://TDGame/Goat.tscn")
 var tower_scene = load("res://TDGame/Tower.tscn")
 
 var tower_cursor = load("res://assets/Turm1x.png")
+var laser_tower_cursor = load("res://assets/Tower_1.png")
 
 export(String, FILE) var wavesTXT
 
@@ -12,6 +13,7 @@ var waves = []
 var threshold = 0
 
 var towerplacement_active = false
+var lasertowerplacement_active = false
 
 export var gridsize = 64
 
@@ -26,13 +28,16 @@ signal tower_placed
 signal tower_fired
 
 func _input(event):
-	if towerplacement_active:
+	if towerplacement_active or lasertowerplacement_active:
 		if Input.is_action_pressed("left_click"):
 			var click_position = event.position
 			click_position.x = floor(click_position.x / gridsize)
 			click_position.y = floor(click_position.y / gridsize)
 			if click_position.x >= 0 and click_position.x < anzahl_kacheln.x and click_position.y >= 0 and click_position.y < anzahl_kacheln.y: 
-				place_tower(click_position)
+				if towerplacement_active:
+					place_tower(click_position)
+				elif lasertowerplacement_active:
+					place_lasertower(click_position)
 		if Input.is_action_pressed("cancel"):
 			towerplacement_active = false
 			Input.set_custom_mouse_cursor(null,Input.CURSOR_ARROW)
@@ -90,6 +95,19 @@ func place_tower(position):
 		add_child(tower)
 		emit_signal("tower_placed")
 
+func place_lasertower(position):
+	if tower_placement_possible(position):
+		towerplacement_active = false
+		Input.set_custom_mouse_cursor(null,Input.CURSOR_ARROW)
+		var tower = tower_scene.instance()
+		tower.position = position * Vector2(gridsize,gridsize) + Vector2(gridsize/2,gridsize/2)
+		tower.show_tower_range(false)
+		tower.connect("tower_fired",self,"on_tower_fire")
+		tower.connect("tower_upgraded",self,"on_tower_upgrade")
+		tower.set_lasertower()
+		add_child(tower)
+		emit_signal("tower_placed")
+
 func tower_placement_possible(position):
 	if not get_parent().is_there_money_for_tower():
 		return false
@@ -134,3 +152,7 @@ func enable_shooting(value):
 	for child in children:
 		if child.is_in_group("tower"):
 			child.enable_shooting(value)
+
+func activate_laser_tower_placement():
+	lasertowerplacement_active = true
+	Input.set_custom_mouse_cursor(laser_tower_cursor,0,Vector2(gridsize/2,gridsize/2))

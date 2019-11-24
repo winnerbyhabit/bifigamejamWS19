@@ -90,3 +90,5 @@ func _on_field_placed():
 	felder += 1
 	$GUI.set_food_per_sec(felder * base_foot_production)
 	update_geld(-1*base_costs_field)
+
+
