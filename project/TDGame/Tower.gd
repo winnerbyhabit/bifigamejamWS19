@@ -73,8 +73,9 @@ func _process(delta):
 					$Animation.set_frame(0)
 					$Animation.play("attack")
 					$Animation.visible = true
-					
-			emit_signal("tower_fired",current_targets.size())
+					emit_signal("tower_fired",current_targets.size())
+				else :
+					emit_signal("tower_fired",min(max_targets,current_targets.size()))
 		else:
 			fire_threshold -= delta
 
