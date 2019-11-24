@@ -68,11 +68,17 @@ func place_sheep_in_stall():
 	var ort = Vector2(ortx, orty)
 	if $TileMap.get_cellv(ort) != sheep_exists and $TileMap.get_cellv(ort) != goat_exists :
 		$TileMap.set_cellv(ort, sheep_exists)
+	#wäre endlosschleife
+	#else:
+	#	place_sheep_in_stall()
 
 
 func _on_TDGame_goat_win():
 	var ortx = rand_range(0, 7)
 	var orty = rand_range(0, 3)
 	var ort = Vector2(ortx, orty)
-	if $TileMap.get_cellv(ort) != sheep_exists and $TileMap.get_cellv(ort) != goat_exists :
-		$TileMap.set_cellv(ort, goat_exists)
+	#if $TileMap.get_cellv(ort) != sheep_exists and $TileMap.get_cellv(ort) != goat_exists :
+	$TileMap.set_cellv(ort, goat_exists)
+	#wäre endlosschleife
+	#else:
+	#	_on_TDGame_goat_win()
