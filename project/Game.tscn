@@ -21,6 +21,7 @@ autoplay = true
 
 [node name="LostScreen" type="ColorRect" parent="."]
 pause_mode = 2
+visible = false
 margin_right = 1024.0
 margin_bottom = 600.0
 color = Color( 1, 1, 1, 0.654902 )
