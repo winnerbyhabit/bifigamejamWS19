@@ -26,6 +26,7 @@ signal recieve_coins(coins_count)
 signal goat_win
 signal tower_placed
 signal tower_fired
+signal winner_by_habit
 
 func _input(event):
 	if towerplacement_active or lasertowerplacement_active:
@@ -65,6 +66,8 @@ func _process(delta):
 				spawn_goat()
 			elif befehl[0] == "pause":
 				threshold += float(befehl[1])
+			elif befehl[0] == "win":
+				emit_signal("winner_by_habit")
 		else:
 			print('keine weiteren Schafe')
 			set_process(false)

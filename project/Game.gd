@@ -101,3 +101,9 @@ func check_if_lost():
 	if goats > 5 and goats > sheeps:
 		return true
 	return false
+
+
+func _on_TDGame_winner_by_habit():
+	#$Credits_screen.visible = true
+	get_tree().change_scene("res://Credits.tscn")
+	#pass
