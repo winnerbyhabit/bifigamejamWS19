@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Wiehern.ogg-42a0d0a5c32c11b29c005680d396071e.oggstr"
+
+[deps]
+
+source_file="res://sfx/Wiehern.ogg"
+dest_files=[ "res://.import/Wiehern.ogg-42a0d0a5c32c11b29c005680d396071e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

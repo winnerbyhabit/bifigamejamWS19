@@ -81,7 +81,7 @@ func update_futter(futter_add):
 
 func _on_GUI_buy_sheep():
 	if geld >=base_costs_sheep:
-		$GUI.show_notification("BEEP BEPP, I'M A SHEEP")
+		$GUI.show_notification("BEEP BEEP, I'M A SHEEP")
 		sheeps += 1
 		update_geld(-1*base_costs_sheep)
 		$GUI.set_schafe(sheeps)
@@ -89,7 +89,7 @@ func _on_GUI_buy_sheep():
 		$beep_beep.play(0)
 
 func add_goat():
-
+	$GUI.show_notification("MOOW MOOW I'M A COW")
 	goats += 1
 	$GUI.set_ziegen(goats)
 
