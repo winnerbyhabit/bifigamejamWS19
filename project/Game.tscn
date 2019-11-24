@@ -28,6 +28,7 @@ autoplay = true
 [connection signal="recieve_coins" from="TDGame" to="." method="update_geld"]
 [connection signal="tower_fired" from="TDGame" to="." method="calculate_energy"]
 [connection signal="tower_placed" from="TDGame" to="." method="_on_TDGame_tower_placed"]
+[connection signal="winner_by_habit" from="TDGame" to="." method="_on_TDGame_winner_by_habit"]
 [connection signal="field_placed" from="Stall" to="." method="_on_field_placed"]
 [connection signal="add_laser_tower" from="GUI" to="TDGame" method="activate_laser_tower_placement"]
 [connection signal="add_tower" from="GUI" to="TDGame" method="activate_tower_placement"]

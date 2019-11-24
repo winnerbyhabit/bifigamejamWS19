@@ -1719,3 +1719,6 @@ pause 1
 spawn
 pause 1
 spawn
+================================
+pause 30
+win
