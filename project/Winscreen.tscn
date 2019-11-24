@@ -13,6 +13,6 @@ margin_right = 1027.0
 margin_bottom = 601.0
 
 [node name="BackGrass" type="Sprite" parent="Exit"]
-position = Vector2( 513.821, 308.215 )
+position = Vector2( 511.605, 301.567 )
 texture = ExtResource( 2 )
 [connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]
