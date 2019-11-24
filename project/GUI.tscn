@@ -1,14 +1,15 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://GUI.gd" type="Script" id=1]
 [ext_resource path="res://assets/Futter.png" type="Texture" id=2]
 [ext_resource path="res://assets/Schaf.png" type="Texture" id=3]
-[ext_resource path="res://assets/Fast_Forward2.png" type="Texture" id=4]
-[ext_resource path="res://assets/Pause.png" type="Texture" id=5]
-[ext_resource path="res://Shopmenu/Shopping.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/CoinMini.png" type="Texture" id=7]
-[ext_resource path="res://assets/Energy.png" type="Texture" id=8]
-[ext_resource path="res://assets/exit.png" type="Texture" id=9]
+[ext_resource path="res://assets/Goat3.png" type="Texture" id=4]
+[ext_resource path="res://assets/Fast_Forward2.png" type="Texture" id=5]
+[ext_resource path="res://assets/Pause.png" type="Texture" id=6]
+[ext_resource path="res://Shopmenu/Shopping.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/CoinMini.png" type="Texture" id=8]
+[ext_resource path="res://assets/Energy.png" type="Texture" id=9]
+[ext_resource path="res://assets/exit.png" type="Texture" id=10]
 
 [node name="GUI" type="Control"]
 anchor_left = 1.0
@@ -33,10 +34,10 @@ margin_bottom = 0.000244141
 color = Color( 0.192157, 0.0352941, 0.0352941, 0.345098 )
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="."]
-editor/display_folded = true
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -243.0
+margin_left = -246.997
+margin_right = 0.00286865
 margin_bottom = 40.0
 
 [node name="FoodPerSec" type="HBoxContainer" parent="HBoxContainer2"]
@@ -63,7 +64,6 @@ margin_bottom = 27.0
 text = "20"
 
 [node name="Schafe" type="HBoxContainer" parent="HBoxContainer2"]
-editor/display_folded = true
 margin_left = 67.0
 margin_right = 152.0
 margin_bottom = 40.0
@@ -88,7 +88,6 @@ margin_bottom = 27.0
 text = "20"
 
 [node name="Ziegen" type="HBoxContainer" parent="HBoxContainer2"]
-editor/display_folded = true
 margin_left = 156.0
 margin_right = 243.0
 margin_bottom = 40.0
@@ -100,10 +99,12 @@ margin_bottom = 27.0
 text = "     Ziegen:"
 
 [node name="TextureRect" type="TextureRect" parent="HBoxContainer2/Ziegen/Label"]
-margin_right = 16.0
-margin_bottom = 16.0
-rect_scale = Vector2( 0.25, 0.25 )
-texture = ExtResource( 3 )
+margin_left = -3.0
+margin_top = -4.5
+margin_right = 52.0
+margin_bottom = 50.5
+rect_scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 4 )
 
 [node name="Value" type="Label" parent="HBoxContainer2/Ziegen"]
 margin_left = 71.0
@@ -127,16 +128,16 @@ alignment = 1
 margin_left = 16.0
 margin_right = 48.0
 margin_bottom = 32.0
-texture_normal = ExtResource( 4 )
+texture_normal = ExtResource( 5 )
 
 [node name="Pause" type="TextureButton" parent="HBoxContainer"]
 pause_mode = 2
 margin_left = 52.0
 margin_right = 84.0
 margin_bottom = 32.0
-texture_normal = ExtResource( 5 )
+texture_normal = ExtResource( 6 )
 
-[node name="Shopping" parent="HBoxContainer" instance=ExtResource( 6 )]
+[node name="Shopping" parent="HBoxContainer" instance=ExtResource( 7 )]
 editor/display_folded = true
 margin_left = 88.0
 margin_top = 0.0
@@ -157,7 +158,7 @@ text = "     Geld:"
 [node name="TextureRect" type="TextureRect" parent="HBoxContainer/Geld/Label"]
 margin_right = 16.0
 margin_bottom = 16.0
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 
 [node name="Value" type="Label" parent="HBoxContainer/Geld"]
 margin_left = 58.0
@@ -210,7 +211,7 @@ margin_left = -1.39722
 margin_top = -5.39722
 margin_right = 17.6028
 margin_bottom = 34.6028
-texture = ExtResource( 8 )
+texture = ExtResource( 9 )
 
 [node name="Value" type="Label" parent="HBoxContainer/Energie"]
 margin_left = 71.0
@@ -224,7 +225,7 @@ pause_mode = 2
 margin_left = 495.0
 margin_right = 527.0
 margin_bottom = 32.0
-texture_normal = ExtResource( 9 )
+texture_normal = ExtResource( 10 )
 [connection signal="pressed" from="HBoxContainer/FastForward" to="." method="_on_FastForward_pressed"]
 [connection signal="pressed" from="HBoxContainer/Pause" to="." method="toggle_pause"]
 [connection signal="add_field" from="HBoxContainer/Shopping" to="." method="_on_Shopping_add_field"]
