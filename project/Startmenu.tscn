@@ -32,7 +32,6 @@ scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 2 )
 
 [node name="Start" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 96.3854
 margin_top = 110.961
 margin_right = 416.385
@@ -49,7 +48,6 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Start"
 
 [node name="Credits" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 315.418
 margin_top = 338.851
 margin_right = 635.418
@@ -66,7 +64,6 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Credits"
 
 [node name="Quit" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 659.317
 margin_top = 127.654
 margin_right = 979.317

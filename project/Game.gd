@@ -105,5 +105,6 @@ func check_if_lost():
 
 func _on_TDGame_winner_by_habit():
 	#$Credits_screen.visible = true
-	get_tree().change_scene("res://Credits.tscn")
+	#get_tree().change_scene("res://Credits.tscn")
+	get_tree().change_scene("res://Winscreen.tscn")
 	#pass
