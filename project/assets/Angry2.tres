@@ -1,0 +1,13 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=2]
+
+[ext_resource path="res://assets/Angry_Goat1.png" type="Texture" id=1]
+[ext_resource path="res://assets/Angry_Goat2.png" type="Texture" id=2]
+
+[resource]
+resource_name = "Angry2"
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "AngryAnim",
+"speed": 5.0
+} ]
