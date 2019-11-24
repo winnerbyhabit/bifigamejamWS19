@@ -3,6 +3,7 @@ extends Node2D
 
 #tileset id
 var sheep_exists = 2
+var goat_exists = 3
 
 var fieldplacement_active = false
 
@@ -65,5 +66,13 @@ func _on_GUI_buy_sheep():
 	var ortx = rand_range(0, 7)
 	var orty = rand_range(0, 3)
 	var ort = Vector2(ortx, orty)
-	if $TileMap.get_cellv(ort) != sheep_exists :
+	if $TileMap.get_cellv(ort) != sheep_exists and $TileMap.get_cellv(ort) != goat_exists :
 		$TileMap.set_cellv(ort, sheep_exists)
+
+
+func _on_TDGame_goat_win():
+	var ortx = rand_range(0, 7)
+	var orty = rand_range(0, 3)
+	var ort = Vector2(ortx, orty)
+	if $TileMap.get_cellv(ort) != sheep_exists and $TileMap.get_cellv(ort) != goat_exists :
+		$TileMap.set_cellv(ort, goat_exists)

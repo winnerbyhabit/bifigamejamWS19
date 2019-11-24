@@ -22,6 +22,7 @@ margin_bottom = 600.0
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
 autoplay = true
+[connection signal="goat_win" from="TDGame" to="Stall" method="_on_TDGame_goat_win"]
 [connection signal="goat_win" from="TDGame" to="." method="add_goat"]
 [connection signal="recieve_coins" from="TDGame" to="." method="update_geld"]
 [connection signal="tower_fired" from="TDGame" to="." method="calculate_energy"]
