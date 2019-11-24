@@ -56,6 +56,7 @@ func _process(delta):
 		$LostScreen.visible = true
 		get_tree().paused = true
 		$LostScreen/Death_audiostream.play(0)
+		$AudioStreamPlayer.playing = false
 		
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -80,12 +81,14 @@ func update_futter(futter_add):
 
 func _on_GUI_buy_sheep():
 	if geld >=base_costs_sheep:
+		$GUI.show_notification("BEEP BEPP, I'M A SHEEP")
 		sheeps += 1
 		update_geld(-1*base_costs_sheep)
 		$GUI.set_schafe(sheeps)
 		$Stall.place_sheep_in_stall()
 
 func add_goat():
+
 	goats += 1
 	$GUI.set_ziegen(goats)
 

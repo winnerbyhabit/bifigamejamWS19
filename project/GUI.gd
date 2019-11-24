@@ -57,3 +57,11 @@ func _on_BackToMenu_pressed():
 
 func _on_Shopping_add_laser_tower():
 	emit_signal("add_laser_tower")
+
+func hide_notifications():
+	$Notification.visible = false
+
+func show_notification(message):
+	$Notification/Label.text = message
+	$Notification.visible = true
+	$Notification/Timer.start(2)
