@@ -1,26 +1,16 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Game.gd" type="Script" id=1]
 [ext_resource path="res://TDGame/TDGame.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Stall/Stall.tscn" type="PackedScene" id=3]
 [ext_resource path="res://sfx/bg-music/Ketsa_-_05_-_Nature_Shuffle.ogg" type="AudioStream" id=4]
 [ext_resource path="res://assets/fonts/sheep_font.res" type="DynamicFont" id=5]
-[ext_resource path="res://assets/Angry_Goat1.png" type="Texture" id=6]
-[ext_resource path="res://assets/Angry_Goat2.png" type="Texture" id=7]
-[ext_resource path="res://GUI.tscn" type="PackedScene" id=8]
-[ext_resource path="res://sfx/bg-music/Chad_Crouch_-_02_-_The_Ramble.ogg" type="AudioStream" id=9]
-[ext_resource path="res://assets/Gras.jpg" type="Texture" id=10]
-[ext_resource path="res://assets/level1_preview.png" type="Texture" id=11]
-[ext_resource path="res://assets/level2_preview.png" type="Texture" id=12]
-[ext_resource path="res://sfx/BeepBeep.ogg" type="AudioStream" id=13]
-
-[sub_resource type="SpriteFrames" id=1]
-animations = [ {
-"frames": [ ExtResource( 6 ), ExtResource( 7 ) ],
-"loop": true,
-"name": "AngryAnim",
-"speed": 2.2
-} ]
+[ext_resource path="res://GUI.tscn" type="PackedScene" id=6]
+[ext_resource path="res://sfx/bg-music/Chad_Crouch_-_02_-_The_Ramble.ogg" type="AudioStream" id=7]
+[ext_resource path="res://assets/Gras.jpg" type="Texture" id=8]
+[ext_resource path="res://assets/level1_preview.png" type="Texture" id=9]
+[ext_resource path="res://assets/level2_preview.png" type="Texture" id=10]
+[ext_resource path="res://sfx/BeepBeep.ogg" type="AudioStream" id=11]
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 1 )
@@ -46,34 +36,27 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -339.5
-margin_top = -225.0
+margin_top = -102.5
 margin_right = 339.5
-margin_bottom = -20.0
+margin_bottom = 102.5
 custom_fonts/font = ExtResource( 5 )
 text = "You lost
 The Game"
 
-[node name="AngryGoaat" type="AnimatedSprite" parent="LostScreen"]
-pause_mode = 2
-position = Vector2( 500, 415 )
-scale = Vector2( 0.5, 0.5 )
-frames = SubResource( 1 )
-animation = "AngryAnim"
-playing = true
-
-[node name="GUI" parent="." instance=ExtResource( 8 )]
-margin_left = 3.0
+[node name="GUI" parent="." instance=ExtResource( 6 )]
+margin_left = 511.0
 margin_top = 0.0
 margin_right = 1024.0
 margin_bottom = 595.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 pause_mode = 2
-stream = ExtResource( 9 )
+stream = ExtResource( 7 )
 autoplay = true
 
 [node name="LevelChooser" type="Control" parent="."]
 pause_mode = 2
+editor/display_folded = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -84,7 +67,7 @@ margin_bottom = 600.0
 [node name="TextureRect" type="TextureRect" parent="LevelChooser"]
 margin_right = 1024.0
 margin_bottom = 600.0
-texture = ExtResource( 10 )
+texture = ExtResource( 8 )
 
 [node name="ColorRect" type="ColorRect" parent="LevelChooser"]
 margin_left = 32.0
@@ -119,16 +102,16 @@ margin_bottom = 64.0
 [node name="Level1" type="TextureButton" parent="LevelChooser/HBoxContainer"]
 margin_right = 128.0
 margin_bottom = 128.0
-texture_normal = ExtResource( 11 )
+texture_normal = ExtResource( 9 )
 
 [node name="Level2" type="TextureButton" parent="LevelChooser/HBoxContainer"]
 margin_left = 132.0
 margin_right = 260.0
 margin_bottom = 128.0
-texture_normal = ExtResource( 12 )
+texture_normal = ExtResource( 10 )
 
 [node name="beep_beep" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 13 )
+stream = ExtResource( 11 )
 volume_db = 1.25
 pitch_scale = 1.25
 [connection signal="goat_win" from="TDGame" to="Stall" method="_on_TDGame_goat_win"]

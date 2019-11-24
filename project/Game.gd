@@ -46,7 +46,7 @@ func _process(delta):
 		update_futter(felder * base_foot_production)
 		
 		#energy
-		var food_consumation = sheeps * foot_consumation_per_sheep_per_second * -1 + -1 * goats * foot_consumation_per_goat_per_second
+		var food_consumation = sheeps * foot_consumation_per_sheep_per_second * -1 + (-1 * goats * foot_consumation_per_goat_per_second)
 		if food_consumation < futter:
 			update_futter(food_consumation)
 			update_energy(sheeps * energy_production_per_sheep_per_second)
@@ -94,7 +94,7 @@ func add_goat():
 	$GUI.set_ziegen(goats)
 
 func calculate_energy(anzahl):
-	var e = floor(-1 * base_tower_energy_consumation + (anzahl-1) * base_tower_energy_consumation * multihit_energy_conumation_factor)
+	var e = floor(-1 * base_tower_energy_consumation + -1 * (anzahl-1) * base_tower_energy_consumation * multihit_energy_conumation_factor)
 	update_energy(e)
 
 func _on_TDGame_tower_placed():
