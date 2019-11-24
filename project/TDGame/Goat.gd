@@ -6,6 +6,8 @@ export var lifepoints = 5
 
 export var destination = Vector2(500,150)
 
+export(Texture) var dead_texture
+
 var is_alive = true
 
 signal win
@@ -28,7 +30,7 @@ func loose():
 		emit_signal("loose")
 		set_process(false)
 		self.is_alive = false
-		self.visible = false
+		$Sprite.texture = dead_texture
 		$CollisionShape2D.disabled = true
 
 func damage(damage_points):

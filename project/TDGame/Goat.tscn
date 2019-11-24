@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://TDGame/Goat.gd" type="Script" id=1]
-[ext_resource path="res://assets/Goat1.png" type="Texture" id=2]
-[ext_resource path="res://sfx/Mäh2.ogg" type="AudioStream" id=3]
+[ext_resource path="res://assets/Goat3.png" type="Texture" id=2]
+[ext_resource path="res://assets/Goat1.png" type="Texture" id=3]
+[ext_resource path="res://sfx/Mäh2.ogg" type="AudioStream" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 18.2661
@@ -14,15 +15,16 @@ position = Vector2( 50, 50 )
 scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 1 )
 lifepoints = 2
+dead_texture = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -2.63812, -22.8293 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -3.66373, -8.30915 )
 shape = SubResource( 1 )
 
 [node name="die" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 3 )
+stream = ExtResource( 4 )
 [connection signal="finished" from="die" to="." method="queue_free"]

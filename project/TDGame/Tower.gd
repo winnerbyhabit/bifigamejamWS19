@@ -1,7 +1,7 @@
 extends Node2D
 
 export var firerate = 2
-
+export var laser_firerate = 1
 export var range_upgrade = 20
 export var tower_range = 100
 export var tower_damage = 1
@@ -18,7 +18,9 @@ signal tower_upgraded
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$Sprite.texture = load("res://assets/Tower_1.png")
+	if is_lasertower:
+		$Sprite.texture = load("res://assets/Tower_1.png")
+		firerate = laser_firerate
 	$Area2D/CollisionShape2D.shape.set_radius(tower_range)
 	$Circle.radius = tower_range
 	$Reloadbar.max_value = firerate
@@ -54,14 +56,15 @@ func _process(delta):
 				else:
 					current_targets.remove(current_targets.find(target))
 				
-				var line = Line2D.new()
-				line.add_point(Vector2(0,0))
-				line.add_point(target.position - position)
-				line.add_to_group('laser')
-				line.default_color = laser_color
-				line.width = 5
-				$Timer.start(0.1)
-				add_child(line)
+				if is_lasertower:
+					var line = Line2D.new()
+					line.add_point(Vector2(0,0))
+					line.add_point(target.position - position)
+					line.add_to_group('laser')
+					line.default_color = laser_color
+					line.width = 5
+					$Timer.start(0.1)
+					add_child(line)
 				
 				
 			if shoot:
