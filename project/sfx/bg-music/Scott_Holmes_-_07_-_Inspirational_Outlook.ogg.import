@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Scott_Holmes_-_07_-_Inspirational_Outlook.ogg-055cc14200a11fa82faf16d98774af8d.oggstr"
+
+[deps]
+
+source_file="res://sfx/bg-music/Scott_Holmes_-_07_-_Inspirational_Outlook.ogg"
+dest_files=[ "res://.import/Scott_Holmes_-_07_-_Inspirational_Outlook.ogg-055cc14200a11fa82faf16d98774af8d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

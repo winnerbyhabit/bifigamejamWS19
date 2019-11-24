@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Chad_Crouch_-_02_-_The_Ramble.ogg-90909a10dcfe0b225beeba787516ce07.oggstr"
+
+[deps]
+
+source_file="res://sfx/bg-music/Chad_Crouch_-_02_-_The_Ramble.ogg"
+dest_files=[ "res://.import/Chad_Crouch_-_02_-_The_Ramble.ogg-90909a10dcfe0b225beeba787516ce07.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
