@@ -43,6 +43,159 @@ pause 1
 spawn
 ====================================
 pause 20
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+pause 1
+spawn
+====================================
+pause 20
 cow
 pause 1
 spawn
