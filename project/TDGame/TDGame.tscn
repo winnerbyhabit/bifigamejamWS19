@@ -1,11 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://TDGame/TDGame.gd" type="Script" id=1]
-[ext_resource path="res://TDGame/Levels/Level1.tscn" type="PackedScene" id=2]
 
 [node name="TDGame" type="Node2D"]
 script = ExtResource( 1 )
 wavesTXT = "res://TDGame/waves.txt"
-level = ExtResource( 2 )
 
 [node name="Navigation2D" type="Navigation2D" parent="."]

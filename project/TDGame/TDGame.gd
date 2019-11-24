@@ -8,8 +8,6 @@ var laser_tower_cursor = load("res://assets/LaserTurm.png")
 
 export(String, FILE) var wavesTXT
 
-export(PackedScene) var level
-
 var waves = []
 
 var threshold = 0

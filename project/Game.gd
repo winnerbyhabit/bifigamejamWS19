@@ -91,7 +91,7 @@ func add_goat():
 
 func calculate_energy(anzahl):
 	var e = floor(-1 * base_tower_energy_consumation + (anzahl-1) * base_tower_energy_consumation * multihit_energy_conumation_factor)
-	update_energy(-1 * anzahl * base_tower_energy_consumation)
+	update_energy(e)
 
 func _on_TDGame_tower_placed():
 	update_geld(-1 * base_costs_tower)
@@ -120,6 +120,7 @@ func check_if_lost():
 func _on_TDGame_winner_by_habit():
 	#$Credits_screen.visible = true
 	#get_tree().change_scene("res://Credits.tscn")
+# warning-ignore:return_value_discarded
 	get_tree().change_scene("res://Winscreen.tscn")
 	#pass
 
